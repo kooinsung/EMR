@@ -41,8 +41,8 @@ var paths = {
     dest: 'dist/assets/images'
   },
   html: {
-    file: 'src/html/**/*.html',
-    include: 'src/include/**/*.html',
+    file: 'src/html/**/*',
+    include: 'src/include/**/*',
     src: 'src/html',
     dest: 'dist/html'
   }
@@ -103,7 +103,7 @@ function images() {
   .pipe(gulpCount('<%= counter %> images files'));
 }
 
-//html include
+//html
 function html() {
   return gulp.src(paths.html.file)
   .pipe(gulpPlumber())
@@ -130,7 +130,7 @@ function watch() {
     port : 3030,
     server: {
       baseDir: paths.root.dest + "/",
-      index: "./html/page1.html"
+      index: "./html/index.html"
     }
   });
 
@@ -138,7 +138,7 @@ function watch() {
   gulp.watch(paths.styles.file, styles);
   gulp.watch(paths.scripts.file, scripts);
   gulp.watch(paths.images.file, images);
-  gulp.watch(paths.html.file, html).on('change', browserSync.reload);
+  gulp.watch(paths.html.file, html);
 }
 
 // var build = gulp.parallel(clean, styles, scripts, images, html, watch);
