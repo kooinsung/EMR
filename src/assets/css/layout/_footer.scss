@@ -1,11 +1,13 @@
 .footer{
+  overflow:hidden;
+  min-width:1280px;
   .sites{
     background:#374b65;
+    height:90px;
     .inner{
       position:relative;
       width:1280px;
       margin:0 auto;
-      border:1px solid red;
     }
   }
   .infos{

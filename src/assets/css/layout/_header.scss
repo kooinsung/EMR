@@ -1,4 +1,6 @@
 .header{
+  overflow:hidden;
+  min-width:1280px;
   .inner{
     position: relative;
     width: 1280px;
@@ -88,7 +90,7 @@
   }
   .gnb{
     background:#0a2f87;
-    height:80px;
+    height:60px;
     ul{
       position:relative;
       width:1280px;
@@ -101,7 +103,7 @@
     }
     a{
       display:block;
-      line-height:80px;
+      line-height:60px;
       color:#fff;
       font-size:18px;
       text-align:center;
