@@ -1,12 +1,12 @@
 .footer{
   overflow:hidden;
-  min-width:1280px;
+  min-width:$width;
   .sites{
     background:#374b65;
     height:90px;
     .inner{
       position:relative;
-      width:1280px;
+      width:$width;
       margin:0 auto;
     }
   }
@@ -16,7 +16,7 @@
     padding-bottom:40px;
     .inner{
       position:relative;
-      width:1280px;
+      width:$width;
       margin:0 auto;
     }
   }

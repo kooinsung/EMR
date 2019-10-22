@@ -31,7 +31,7 @@ input[type=text]::-ms-clear { display: none; }
 
 legend, .blind { overflow: hidden; position: absolute; width: 1px; height: 1px; clip: rect(1px, 1px, 1px, 1px); }
 
-body, input, select, textarea, button, label, a, li, th, td, h1, h2, h3, h4, h5, h6, p { font-size: 14px; font-family: 'Noto Sans KR', 'NS', 'Apple SD Gothic Neo', 'Microsoft NeoGothic', 'Droid sans', 'Helvetica', 'sans-serif'; font-weight: 400; }
+body, input, select, textarea, button, label, a, li, th, td, h1, h2, h3, h4, h5, h6, p { font-size: 12px; font-family: 'Noto Sans KR', 'NS', 'Apple SD Gothic Neo', 'Microsoft NeoGothic', 'Droid sans', 'Helvetica', 'sans-serif'; font-weight: 400; }
 
 ::-webkit-input-placeholder { font-size: 14px !important; color: #999 !important; }
 
@@ -121,7 +121,7 @@ select::-ms-expand { display: none; }
 
 .content { overflow: hidden; min-width: 1280px; }
 
-.sub-contents { position: relative; overflow: hidden; width: 1280px; margin: 0 auto; border: 1px solid red; min-height: 1020px; }
+.sub-contents { position: relative; overflow: hidden; width: 1280px; margin: 0 auto; min-height: 1020px; }
 
 .visual { position: relative; height: 600px; font-size: 0; }
 
@@ -181,11 +181,41 @@ select::-ms-expand { display: none; }
 
 .lnb .depth1 { display: block; font-size: 30px; }
 
-.lnb .menus .depth2 { border-bottom: 1px solid #ddd; }
+.lnb .menus { border-bottom: 1px solid #ddd; margin: 25px 0 0 0; }
 
-.lnb .menus .depth2 > a { display: block; font-size: 17px; font-weight: 400; height: 58px; line-height: 58px; padding-left: 15px; }
+.lnb .menus .depth2 > a.actived { background: #108ad3; color: #fff; border-top: 0; }
+
+.lnb .menus .depth2 > a.actived:before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: #0a2f87; }
+
+.lnb .menus .depth2 > a { border-top: 1px solid #ddd; position: relative; display: block; font-size: 17px; font-weight: 400; height: 58px; line-height: 58px; padding-left: 15px; box-sizing: border-box; }
+
+.lnb .menus .depths { padding: 20px 0; }
+
+.lnb .menus .depth3 > a.actived { color: #108ad3; }
+
+.lnb .menus .depth3 > a { display: block; padding: 7px 0 7px 15px; box-sizing: border-box; font-size: 17px; }
 
 .content-view { margin: 0 0 0 330px; padding-top: 60px; }
+
+.content-view .tops { position: relative; border-bottom: 1px solid #ddd; padding-bottom: 25px; }
+
+.content-view .tops .tit { font-size: 30px; }
+
+.content-view .tops .location { position: absolute; top: 10px; right: 0; }
+
+.content-view .tops .location li { position: relative; display: inline-block; vertical-align: top; padding: 0 10px; }
+
+.content-view .tops .location li:first-child { padding-left: 0; }
+
+.content-view .tops .location li:last-child { padding-right: 0; }
+
+.content-view .tops .location li:last-child:after { display: none; }
+
+.content-view .tops .location li:after { content: ''; position: absolute; top: 50%; right: -3px; margin-top: -4px; width: 5px; height: 9px; background: url("../images/ico_arrow.png") center center no-repeat; }
+
+.content-view .tops .location a { font-size: 13px; color: #666; }
+
+.content-view .tops .location .home a { display: block; text-indent: -9999px; width: 16px; height: 19px; background: url("../images/ico_home.png") center center no-repeat; }
 
 /* Owl Carousel - Core */
 .owl-carousel { display: none; width: 100%; -webkit-tap-highlight-color: transparent; /* position relative and z-index fix webkit rendering fonts issue */ position: relative; z-index: 1; }

@@ -1,13 +1,12 @@
 .content{
   overflow:hidden;
-  min-width:1280px;
+  min-width:$width;
 }
 .sub-contents{
   position:relative;
   overflow:hidden;
-  width:1280px;
+  width:$width;
   margin:0 auto;
-  border:1px solid red;
   min-height:1020px;
 }
 .visual{
@@ -72,7 +71,7 @@
   background:#eaeef7;
   .inner{
     position:relative;
-    width:1280px;
+    width:$width;
     height:300px;
     margin:0 auto;
   }
@@ -140,7 +139,7 @@
   }
 }
 .board{
-  width:1280px;
+  width:$width;
   margin:0 auto;
   padding-top:40px;
   font-size:0;
@@ -210,32 +209,47 @@
     font-size:30px;
   }
   .menus{
+    border-bottom:1px solid #ddd;
+    margin:25px 0 0 0;
     .depth2{
-      border-bottom:1px solid #ddd;
-      &.actived{
-        a{
-
+      >a.actived{
+        background:#108ad3;
+        color:#fff;
+        border-top:0;
+        &:before{
+          content:'';
+          position:absolute;
+          top:0;
+          left:0;
+          right:0;
+          height:3px;
+          background:#0a2f87;
         }
       }
       >a{
+        border-top:1px solid #ddd;
+        position:relative;
         display:block;
         font-size:17px;
         font-weight:400;
         height:58px;
         line-height:58px;
         padding-left:15px;
+        box-sizing: border-box;
       }
     }
     .depths{
-      li{
-        &.actived{
-          a{
-
-          }
-        }
+      padding:20px 0;
+    }
+    .depth3{
+      >a.actived{
+        color:#108ad3;
       }
-      a{
-
+      >a{
+        display:block;
+        padding:7px 0 7px 15px;
+        box-sizing: border-box;
+        font-size:17px;
       }
     }
   }
@@ -243,4 +257,55 @@
 .content-view{
   margin:0 0 0 330px;
   padding-top:60px;
+  .tops{
+    position:relative;
+    border-bottom:1px solid #ddd;
+    padding-bottom:25px;
+    .tit{
+      font-size:30px;
+    }
+    .location{
+      position:absolute;
+      top:10px;
+      right:0;
+      li{
+        position:relative;
+        display:inline-block;
+        vertical-align: top;
+        padding:0 10px;
+        &:first-child{
+          padding-left:0;
+        }
+        &:last-child{
+          padding-right:0;
+          &:after{
+            display:none;
+          }
+        }
+        &:after{
+          content:'';
+          position:absolute;
+          top:50%;
+          right:-3px;
+          margin-top:-4px;
+          width:5px;
+          height:9px;
+          background:url('#{$imgPath}ico_arrow.png') center center no-repeat;
+        }
+      }
+      a{
+        font-size:13px;
+        color:#666;
+      }
+      .home{
+        a{
+          display:block;
+          text-indent: -9999px;
+          width:16px;
+          height:19px;
+          background:url('#{$imgPath}ico_home.png') center center no-repeat;
+        }
+      }
+    }
+  }
 }
