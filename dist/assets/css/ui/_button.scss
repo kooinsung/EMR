@@ -1,0 +1,13 @@
+.button{
+  display:inline-block;
+  width:100px;
+  height:40px;
+  line-height:40px;
+  text-align:center;
+  color:#fff;
+  font-size:14px;
+  font-weight:700;
+  &.default{
+    background:#108ad3;
+  }
+}
