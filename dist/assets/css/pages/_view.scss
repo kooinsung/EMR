@@ -204,15 +204,16 @@
   }
 }
 .lnb{
-  width:200px;
+  width:220px;
   position:absolute;
   top:0;
   left:0;
   bottom:0;
-  padding-top:60px;
+  padding-top:65px;
   .depth1{
     display:block;
-    font-size:30px;
+    font-size:24px;
+    font-weight:700;
   }
   .menus{
     border-bottom:1px solid #ddd;
@@ -231,17 +232,30 @@
           height:3px;
           background:#0a2f87;
         }
+        &:after{
+          background:url('#{$imgPath}ico_lnb-arrow-on.png') center center no-repeat;
+        }
       }
       >a{
         border-top:1px solid #ddd;
         position:relative;
         display:block;
-        font-size:17px;
+        font-size:14px;
         font-weight:400;
-        height:58px;
-        line-height:58px;
+        height:53px;
+        line-height:53px;
         padding-left:15px;
         box-sizing: border-box;
+        &:after{
+          content:'';
+          position:absolute;
+          top:50%;
+          right:18px;
+          width:6px;
+          height:10px;
+          margin-top:-5px;
+          background:url('#{$imgPath}ico_lnb-arrow-off.png') center center no-repeat;
+        }
       }
     }
     .depths{
@@ -261,15 +275,16 @@
   }
 }
 .content-view{
-  margin:0 0 0 250px;
-  padding-top:60px;
+  margin:0 0 0 280px;
+  padding-top:65px;
   .tops{
     position:relative;
     border-bottom:1px solid #ddd;
     padding-bottom:25px;
     margin-bottom:40px;
     .tit{
-      font-size:30px;
+      font-size:24px;
+      font-weight:700;
     }
     .location{
       position:absolute;
@@ -317,21 +332,85 @@
   }
 }
 
-.board-list{
-  .board-search{
+.board-search{
 
+}
+.board-search-select{
+
+}
+.board-search-input{
+
+}
+.board-search-button{
+
+}
+
+.tb-list{
+  border-top:2px solid #0a2f87;
+  border-bottom:1px solid #ddd;
+  table{
+    width:100%;
   }
-  .board-search-select{
-
+  thead{
+    th{
+      height:48px;
+      background:#e8edf3;
+      text-align:center;
+      font-size:14px;
+      font-weight:700;
+    }
   }
-  .board-search-input{
-
+  tbody{
+    td{
+      height:49px;
+      text-align:center;
+      font-size:14px;
+      border-top:1px solid #ddd;
+      &.tit{
+        text-align:left;
+        a{
+          line-height:49px;
+          width:400px;
+          display:block;
+          padding:0 20px;
+          text-overflow:ellipsis;
+          white-space:nowrap;
+          word-wrap:normal;
+          overflow:hidden;
+          &:hover{
+            color:#017eba;
+            text-decoration: underline;
+          }
+        }
+      }
+    }
   }
-  .board-search-button{
+}
 
+.paging{
+  border:1px solid red;
+  .control{
+    &.first{
+
+    }
+    &.prev{
+
+    }
+    &.last{
+
+    }
+    &.next{
+
+    }
   }
+  .num{
+    a{
 
-  .board-table{
+    }
+    &.actived{
+      a{
 
+      }
+    }
   }
 }
