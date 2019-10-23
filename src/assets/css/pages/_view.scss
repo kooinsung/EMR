@@ -11,8 +11,10 @@
 }
 .visual{
   position:relative;
-  height:600px;
+  height:480px;
   font-size:0;
+  overflow:hidden;
+  text-align:center;
 
   .menus{
     position:absolute;
@@ -21,7 +23,7 @@
     bottom:0;
     width:100%;
     margin-right:-100%;
-    transform:translateX(480px);
+    transform:translateX(340px);
     background:rgba(0,0,0,.3);
     ul{
       margin-top:15px;
@@ -30,7 +32,7 @@
       position:relative;
       text-align:center;
       width:160px;
-      padding:25px 0;
+      padding:12px 0;
       &:nth-child(0){
 
       }
@@ -60,7 +62,7 @@
     }
     strong{
       display:block;
-      font-size:15px;
+      font-size:13px;
       color:#fff;
       font-weight:400;
       margin:10px 0 0 0;
@@ -72,13 +74,13 @@
   .inner{
     position:relative;
     width:$width;
-    height:300px;
+    height:256px;
     margin:0 auto;
   }
   .tit{
     position:relative;
     display:inline-block;
-    font-size:30px;
+    font-size:24px;
     font-weight:400;
     margin:40px 0 0 0;
     padding-top:30px;
@@ -97,13 +99,17 @@
     position:absolute;
     bottom:40px;
     left:0;
-    width:280px;
-    height:110px;
+    width:240px;
+    height:86px;
     font-size:0;
     a{
       display:block;
-      width:280px;
-      height:110px;
+      width:240px;
+      height:86px;
+    }
+    img{
+      width:240px;
+      height:86px;
     }
   }
   .menus{
@@ -113,11 +119,11 @@
     font-size:0;
     li{
       position:relative;
-      width:200px;
-      height:220px;
+      width:160px;
+      height:176px;
       display:inline-block;
       vertical-align: top;
-      margin-left:40px;
+      margin-left:20px;
       background:#fff;
       text-align:center;
     }
@@ -130,9 +136,9 @@
       bottom: 0;
       left:0;
       right:0;
-      height:80px;
-      line-height:80px;
-      font-size:16px;
+      height:60px;
+      line-height:60px;
+      font-size:15px;
       font-weight:400;
       background:#f6f6f6;
     }
@@ -144,10 +150,10 @@
   padding-top:40px;
   font-size:0;
   .board-item{
-    width:400px;
+    width:312px;
     display:inline-block;
     vertical-align: top;
-    margin-right:40px;
+    margin-right:32px;
     &:last-child{
       margin-right:0;
     }
@@ -165,7 +171,7 @@
     }
     strong{
       display:inline-block;
-      font-size:15px;
+      font-size:13px;
       color:#fff;
       font-weight:500;
       background:#0a2f87;
@@ -176,7 +182,7 @@
     }
   }
   .board-list{
-    margin:30px 0 50px 0;
+    margin:20px 0 50px 0;
     li{
 
     }
@@ -185,7 +191,7 @@
       padding:10px 0;
     }
     .txt{
-      font-size:20px;
+      font-size:18px;
       text-overflow:ellipsis;
       white-space:nowrap;
       word-wrap:normal;
@@ -198,7 +204,7 @@
   }
 }
 .lnb{
-  width:270px;
+  width:200px;
   position:absolute;
   top:0;
   left:0;
@@ -255,12 +261,13 @@
   }
 }
 .content-view{
-  margin:0 0 0 330px;
+  margin:0 0 0 250px;
   padding-top:60px;
   .tops{
     position:relative;
     border-bottom:1px solid #ddd;
     padding-bottom:25px;
+    margin-bottom:40px;
     .tit{
       font-size:30px;
     }
@@ -307,5 +314,24 @@
         }
       }
     }
+  }
+}
+
+.board-list{
+  .board-search{
+
+  }
+  .board-search-select{
+
+  }
+  .board-search-input{
+
+  }
+  .board-search-button{
+
+  }
+
+  .board-table{
+
   }
 }

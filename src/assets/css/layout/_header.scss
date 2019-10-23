@@ -4,9 +4,10 @@
   .inner{
     position: relative;
     width: $width;
-    height: 130px;
+    height: 80px;
     margin: 0 auto;
     overflow:hidden;
+    padding:0 10px;
   }
   .logo{
     position:absolute;
@@ -16,41 +17,58 @@
   .search{
     position:relative;
     box-sizing: border-box;
-    width:573px;
-    height:50px;
+    width:300px;
+    height:40px;
     border-radius:50px;
     border:4px solid #59c2e6;
     overflow:hidden;
-    margin:40px 0 0 317px;
+    margin:20px 0 0 350px;
     input{
-      width:498px;
-      height:42px;
+      width:250px;
+      height:32px;
       padding-left:18px;
     }
     button{
       position:absolute;
       top:0;
       right:0;
-      width:60px;
-      height:42px;
+      width:40px;
+      height:32px;
       text-indent: -9999px;
       background:url('#{$imgPath}ico_search.png') center center no-repeat;
-      &:before{
-        content:'';
-        width:1px;
-        height:24px;
-        background:#59c2e6;
-        position:absolute;
-        top:50%;
-        left:0;
-        margin-top:-12px;
-      }
     }
   }
   .util{
     position:absolute;
-    top:55px;
+    bottom:20px;
     right:0;
+    text-align:right;
+    .after-login{
+      position:relative;
+      display:inline-block;
+      background:#0a2f87;
+      height:24px;
+      line-height:24px;
+      border-radius:1px;
+      padding:0 40px 0 6px;
+      margin:20px 0 3px 0;
+      .user{
+        color:#fff;
+        font-size:12px;
+      }
+      .mail{
+        position:absolute;
+        top:0;
+        right:0;
+        text-indent:-9999px;
+        width:28px;
+        height:24px;
+        background:url('#{$imgPath}ico_mail.png') center center no-repeat;
+      }
+    }
+    ul{
+      display:block;
+    }
     li{
       position:relative;
       display:inline-block;
@@ -64,7 +82,7 @@
         position:absolute;
         top:50%;
         right:0;
-        margin-top:-6px;
+        margin-top:-4px;
       }
       &:first-child{
         padding-left:0;
@@ -90,7 +108,7 @@
   }
   .gnb{
     background:#0a2f87;
-    height:60px;
+    height:50px;
     ul{
       position:relative;
       width:$width;
@@ -100,13 +118,62 @@
       display:inline-block;
       vertical-align: top;
       width:16.66%;
+      &.actived{
+        a{
+          background:#108ad3;
+          color:#fff;
+        }
+      }
     }
     a{
       display:block;
-      line-height:60px;
+      line-height:50px;
       color:#fff;
-      font-size:18px;
+      font-size:14px;
       text-align:center;
+    }
+  }
+  .gnb-depth{
+    display:none;
+    position:absolute;
+    top:130px;
+    left:0;
+    right:0;
+    z-index:10;
+    background:#fff;
+    height:178px;
+    font-size:0;
+    border-bottom:1px solid #0a2f87;
+  }
+  .gnb-depth-inner{
+    width: $width;
+    margin:0 auto;
+  }
+  .gnb-depth-item{
+    display:inline-block;
+    vertical-align: top;
+    width:16.66%;
+    ul{
+      margin:25px 0 0 20px;
+    }
+    li{
+      line-height:100%;
+      padding:7px 0;
+      &.actived{
+        a{
+          color:#108ad3;
+        }
+      }
+      &:hover{
+        a{
+          color:#108ad3;
+        }
+      }
+    }
+    a{
+      display:block;
+      font-size:14px;
+      color:#555;
     }
   }
 }
