@@ -1,13 +1,35 @@
 .button{
   display:inline-block;
-  width:100px;
-  height:40px;
-  line-height:40px;
+  min-width:60px;
+  height:50px;
+  line-height:50px;
   text-align:center;
   color:#fff;
   font-size:14px;
   font-weight:700;
+  margin-left:8px;
+  padding:0 20px;
+  &.small{
+    width:100px;
+    height:40px;
+    line-height:40px;
+    padding:0;
+    min-width:auto;
+    margin:0 2px;
+  }
   &.default{
     background:#108ad3;
+  }
+  &.modify{
+    background:#e8edf3;
+    color:#444;
+  }
+  &.delete{
+    background:#e8edf3;
+    color:#444;
+  }
+  &.cancel{
+    background:#e8edf3;
+    color:#444;
   }
 }
