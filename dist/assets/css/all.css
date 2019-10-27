@@ -221,6 +221,36 @@ select::-ms-expand { display: none; }
 
 .modal-table tbody td { position: relative; font-size: 14px; padding: 5px 10px; line-height: 150%; border-bottom: 1px solid #ddd; }
 
+.reply { margin-top: 30px; }
+
+.reply .reply-title { display: block; font-size: 14px; font-weight: 700; margin-bottom: 5px; }
+
+.reply .reply-write { margin-top: 50px; }
+
+.reply .write-form { position: relative; }
+
+.reply .write-form .custom-textarea { height: 96px; margin-right: 128px; }
+
+.reply .write-form .custom-textarea textarea { height: 100%; }
+
+.reply .write-form button { position: absolute; top: 0; right: 0; width: 118px; height: 118px; line-height: 118px; text-align: center; font-size: 14px; color: #fff; background: #108ad3; }
+
+.reply-item .name { font-size: 14px; font-weight: 700; }
+
+.reply-item .txt { color: #222; font-size: 14px; }
+
+.reply-item .date { font-size: 12px; color: #777; display: block; }
+
+.reply-item .reply-button { margin-top: 15px; padding: 0 10px; height: 24px; line-height: 24px; text-align: center; background: #f6f6f6; border: 1px solid #ddd; }
+
+.reply-item2 { background: #f6f6f6; }
+
+.reply-item2 td { padding-left: 60px !important; }
+
+.reply-item2 td:before { content: ''; position: absolute; top: 15px; left: 40px; width: 10px; height: 10px; border: 1px solid #777; border-top: 0; border-right: 0; }
+
+.reply-item2 .custom-textarea { background: #fff; }
+
 .tabs { position: relative; font-size: 0; }
 
 .tabs:after { content: ''; position: absolute; bottom: 0; left: 0; width: 100%; height: 2px; background: #0a2f87; }
