@@ -3,6 +3,11 @@
   margin-bottom: 50px;
   padding: 30px 70px;
   font-size: 0;
+  .button{
+    height:40px;
+    line-height:40px;
+    margin-left:0;
+  }
 }
 .board-search-select {
   position: relative;
@@ -205,6 +210,15 @@
       background:#108ad3;
     }
   }
+  .keyword{
+    li{
+      font-weight:bold;
+      color:#0a2f87;
+      display:inline-block;
+      vertical-align: top;
+      font-size:14px;
+    }
+  }
 }
 
 .files{
@@ -296,6 +310,8 @@
     a {
       display: block;
       color: #666;
+      box-sizing: border-box;
+      height:100%;
     }
     &.actived {
       border: 1px solid #108ad3;

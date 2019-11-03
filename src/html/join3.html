@@ -1,0 +1,69 @@
+<!-- @@master ../include/layout.html -->
+<!-- @@block content -->
+<style>
+  .header, .footer{
+    display:none;
+  }
+</style>
+<div class="sub-contents">
+  <div class="join">
+    <h1 class="join-logo">logo</h1>
+    <div class="join-step">
+      <ul>
+        <li class="actived"><span>이용약관</span></li>
+        <li class="actived"><span>본인인증</span></li>
+        <li class="actived"><span>회원정보 입력</span></li>
+        <li><span>가입완료</span></li>
+      </ul>
+      <p>회원 가입을 원하실 경우, 아래 이용약관 및 개인정보 취급방침에 동의하여 주십시오</p>
+    </div>
+    <div class="step3">
+      <div class="join-input">
+        <label for="name">성명</label>
+        <span class="custom-input"><input type="text" id="name" placeholder="성명"></span>
+      </div>
+      <div class="join-input mix">
+        <label for="id">아이디</label>
+        <span class="custom-input"><input type="text" id="id" placeholder="아이디"></span>
+        <button type="button" class="button cancel">중복확인</button>
+      </div>
+      <div class="join-input mix">
+        <label for="nickname">닉네임</label>
+        <span class="custom-input"><input type="text" id="nickname" placeholder="닉네임"></span>
+        <button type="button" class="button cancel">중복확인</button>
+      </div>
+      <div class="join-input">
+        <label for="pw">비밀번호</label>
+        <span class="custom-input"><input type="password" id="pw" placeholder="비밀번호"></span>
+      </div>
+      <div class="join-input">
+        <label for="pw-re">비밀번호 재확인</label>
+        <span class="custom-input"><input type="text" id="pw-re" placeholder="비밀번호 재확인"></span>
+      </div>
+      <div class="join-input">
+        <label for="">핸드폰번호</label>
+        <div class="phone">
+          <span class="custom-input"><input type="text" placeholder="자동입력"></span>
+          <span class="custom-input"><input type="text" placeholder="자동입력"></span>
+          <span class="custom-input"><input type="text" placeholder="자동입력"></span>
+        </div>
+        <span class="custom-checkbox">
+          <input type="checkbox" id="view-check">
+          <label for="view-check">정보공개 여부</label>
+        </span>
+      </div>
+      <div class="join-input">
+        <label for="email">이메일주소</label>
+        <span class="custom-input"><input type="text" id="email"></span>
+        <span class="custom-checkbox">
+          <input type="checkbox" id="view-check2">
+          <label for="view-check2">정보공개 여부</label>
+        </span>
+      </div>
+    </div>
+    <div class="join-buttons">
+      <a href="" class="button default">가입하기</a>
+    </div>
+  </div>
+</div>
+<!-- @@close -->
