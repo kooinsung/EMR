@@ -12,7 +12,7 @@
 .custom-select{
   position:relative;
   display:block;
-  border:1px solid #d5d5d5;
+  border:2px solid #d5d5d5;
   height:36px;
   &:after {
     content: "";
@@ -37,7 +37,7 @@
 
 .custom-textarea{
   display:block;
-  border:1px solid #d5d5d5;
+  border:2px solid #d5d5d5;
   padding:10px;
   textarea{
     width:100%;

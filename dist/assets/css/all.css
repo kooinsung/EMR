@@ -111,7 +111,7 @@ select::-ms-expand { display: none; }
 
 .board-search-select:after { content: ""; position: absolute; top: 0; right: 0; z-index: 1; width: 35px; height: 36px; background: url("../images/ico_select-arrow.png") right center no-repeat; }
 
-.board-search-select select { position: relative; z-index: 2; font-size: 13px; width: 100%; height: 100%; background: transparent; text-indent: 16px; }
+.board-search-select select { position: relative; z-index: 2; font-size: 13px; width: 100%; height: 100%; background: transparent; padding-left: 16px; }
 
 .board-search-input { display: inline-block; vertical-align: top; width: 470px; height: 40px; box-sizing: border-box; background: #fff; border: 2px solid #d5d5d5; margin-right: 10px; }
 
@@ -269,13 +269,13 @@ select::-ms-expand { display: none; }
 
 .custom-input input { width: 100%; height: 36px; text-indent: 10px; font-size: 14px; }
 
-.custom-select { position: relative; display: block; border: 1px solid #d5d5d5; height: 36px; }
+.custom-select { position: relative; display: block; border: 2px solid #d5d5d5; height: 36px; }
 
 .custom-select:after { content: ""; position: absolute; top: 0; right: 0; z-index: 1; width: 35px; height: 36px; background: url("../images/ico_select-arrow.png") right center no-repeat; }
 
 .custom-select select { position: relative; z-index: 2; font-size: 13px; width: 100%; height: 100%; background: transparent; text-indent: 16px; }
 
-.custom-textarea { display: block; border: 1px solid #d5d5d5; padding: 10px; }
+.custom-textarea { display: block; border: 2px solid #d5d5d5; padding: 10px; }
 
 .custom-textarea textarea { width: 100%; height: 160px; }
 
@@ -575,7 +575,7 @@ select::-ms-expand { display: none; }
 
 .auth-result .aco-td .detail { display: inline-block; vertical-align: top; padding: 0 10px; height: 48px; line-height: 48px; font-size: 14px; }
 
-.auth-result .aco-td .aco-toggle { position: absolute; top: 50%; right: 0; width: 80px; height: 30px; margin-top: -15px; line-height: 26px; box-sizing: border-box; border: 2px solid #0a2f87; border-radius: 30px; padding-left: 10px; text-align: left; }
+.auth-result .aco-td .aco-toggle { position: absolute; top: 50%; right: 0; width: 80px; height: 30px; margin-top: -15px; line-height: 26px; box-sizing: border-box; border: 2px solid #0a2f87; border-radius: 30px; padding-left: 10px; text-align: left; font-size: 12px; }
 
 .auth-result .aco-td .aco-toggle:after { content: ''; position: absolute; top: 50%; right: 10px; width: 7px; height: 4px; margin-top: -2px; background: url("../images/ico_toggle.png") 0 0 no-repeat; }
 
