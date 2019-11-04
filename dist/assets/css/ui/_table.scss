@@ -41,14 +41,14 @@
 .board-search-input {
   display: inline-block;
   vertical-align: top;
-  width: 470px;
+  width: 530px;
   height: 40px;
   box-sizing: border-box;
   background: #fff;
   border: 2px solid #d5d5d5;
   margin-right: 10px;
   &.short {
-    width: 300px;
+    width: 394px;
   }
   input {
     font-size: 13px;
@@ -219,6 +219,29 @@
       font-size:14px;
     }
   }
+  .col3{
+    li{
+      display:inline-block;
+      vertical-align: top;
+      width:33.33%;
+      text-align:center;
+      box-sizing: border-box;
+      border-left: 1px solid #ddd;
+      &:first-child{
+        border-left:0;
+      }
+    }
+  }
+  .view-button{
+    border:2px solid #0a2f87;
+    font-size:13px;
+    color:#0a2f87;
+    text-align:center;
+    width:63px;
+    height:30px;
+    line-height:28px;
+    border-radius:30px;
+  }
 }
 
 .files{
@@ -348,7 +371,7 @@
     td {
       position:relative;
       font-size: 14px;
-      padding: 5px 10px;
+      padding: 15px 10px;
       line-height: 150%;
       border-bottom: 1px solid #ddd;
     }

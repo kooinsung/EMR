@@ -33,6 +33,19 @@
     background: transparent;
     padding-left: 16px;
   }
+  &.long{
+    border:2px solid #0a2f87;
+    margin-bottom:50px;
+    &:after {
+      width: 52px;
+      height: 36px;
+      background: url("#{$imgPath}ico_select-arrow-long.png") right center no-repeat;
+    }
+    select{
+      font-size:18px;
+      font-weight:500;
+    }
+  }
 }
 
 .custom-textarea{
