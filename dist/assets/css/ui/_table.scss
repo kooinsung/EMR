@@ -64,6 +64,7 @@
   border-bottom: 1px solid #ddd;
   table {
     width: 100%;
+    table-layout: fixed;
   }
   thead {
     th {
@@ -80,6 +81,19 @@
       text-align: center;
       font-size: 14px;
       border-top: 1px solid #ddd;
+      &.left{
+        text-align:left !important;
+      }
+      &.center{
+        text-align:center !important;
+      }
+      &.right{
+        text-align:right !important;
+      }
+      &.check-number{
+        text-align:left;
+        padding:0 7px;
+      }
       &.tit {
         text-align: left;
         a {
@@ -98,6 +112,16 @@
           }
         }
       }
+      .view-number{
+        display:inline-block;
+        text-align:center;
+        background:#108ad3;
+        color:#fff;
+        font-size:14px;
+        width:60px;
+        height:28px;
+        line-height:28px;
+      }
     }
   }
 }
@@ -106,6 +130,7 @@
   border-top: 2px solid #0a2f87;
   table {
     width: 100%;
+    table-layout: fixed;
   }
   thead {
     th {
@@ -146,6 +171,7 @@
   border-top: 2px solid #0a2f87;
   table {
     width: 100%;
+    table-layout: fixed;
   }
   tbody {
     tr {
@@ -240,6 +266,9 @@
     line-height:28px;
     border-radius:30px;
   }
+}
+.requity{
+  color:#f02011;
 }
 
 .files{

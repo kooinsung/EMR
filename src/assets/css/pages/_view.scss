@@ -1113,9 +1113,6 @@
     background: #e8edf3;
     padding: 60px 0;
     text-align: center;
-    .inner{
-
-    }
     label{
       margin-right:10px;
     }
@@ -1191,11 +1188,69 @@
     text-align: center;
     border-left:1px solid #ddd;
     border-right:1px solid #ddd;
+    label{
+    }
+    .picker{
+      position:relative;
+      display:inline-block;
+      vertical-align: top;
+      margin-right:20px;
+      .custom-input{
+        width:115px;
+        margin:0 9px;
+      }
+      .bar{
+        font-size:14px;
+        position:absolute;
+        left:50%;
+        top:0;
+        margin-left:-9px;
+        width:18px;
+        height:40px;
+        line-height:40px;
+        text-align:center;
+        font-weight:700;
+      }
+    }
+    .custom-input{
+      display:inline-block;
+      vertical-align: top;
+      width:140px;
+      margin-right:5px;
+    }
+    .custom-select{
+      display:inline-block;
+      vertical-align: top;
+      width:110px;
+      margin-right:10px;
+    }
+    .button{
+      margin-left:5px;
+    }
   }
   .note-box{
     border:1px solid #ddd;
     border-top:0;
     padding:30px 30px 0 30px;
     box-sizing: border-box;
+    min-height:500px;
+  }
+  .note-nums{
+    position:absolute;
+    top:15px;
+    right:20px;
+    li{
+      display:inline-block;
+      margin-left:10px;
+    }
+    .nn1{
+      color:#00af4c;
+    }
+    .nn2{
+      color:#108ad3;
+    }
+    .nn3{
+      color:#f02011;
+    }
   }
 }
