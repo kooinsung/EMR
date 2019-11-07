@@ -739,7 +739,7 @@
   .default{
     font-size:14px;
     line-height:100%;
-    padding:10px 0 50px 0;
+    padding:0 0 50px 0;
   }
   .login{
     background:#e8edf3;
@@ -1097,5 +1097,105 @@
       height:40px;
       line-height:40px;
     }
+  }
+}
+
+.mypage {
+  font-size: 0;
+
+  .default {
+    font-size: 14px;
+    line-height: 100%;
+    padding: 0 0 50px 0;
+  }
+
+  .password-inputs {
+    background: #e8edf3;
+    padding: 60px 0;
+    text-align: center;
+    .inner{
+
+    }
+    label{
+      margin-right:10px;
+    }
+    .custom-input{
+      width:200px;
+      display:inline-block;
+      vertical-align: top;
+    }
+    .button{
+      width:100px;
+    }
+  }
+
+  .myinfo-list{
+    ul{
+      width:810px;
+      margin-left:-15px;
+    }
+    li{
+      display:inline-block;
+      vertical-align: top;
+      width:33.33%;
+      margin-top:20px;
+      text-align:center;
+    }
+    .in{
+      position:relative;
+      display:block;
+      box-sizing: border-box;
+      border:1px solid #ddd;
+      height:200px;
+      margin:0 15px;
+    }
+    .custom-checkbox{
+      position:absolute;
+      top:10px;
+      left:10px;
+    }
+    .infos{
+      @include center-both;
+    }
+    .type1{
+      dt{
+        display:inline-block;
+        vertical-align: top;
+        font-size:14px;
+        font-weight:500;
+      }
+      dd{
+        display:inline-block;
+        vertical-align: top;
+      }
+    }
+    .type2{
+      dt{
+        font-size:14px;
+        font-weight:500;
+      }
+    }
+    button{
+      width:100px;
+      margin-top:20px;
+      padding:5px 0;
+      background:#f6f6f6;
+      border:1px solid #ddd;
+      font-size:13px;
+    }
+  }
+
+  .note-search-form{
+    background: #e8edf3;
+    padding: 34px 0;
+    text-align: center;
+    border-left:1px solid #ddd;
+    border-right:1px solid #ddd;
+  }
+  .note-box{
+    border:1px solid #ddd;
+    border-top:0;
+    padding:30px 30px 0 30px;
+    box-sizing: border-box;
   }
 }

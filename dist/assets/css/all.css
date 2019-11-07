@@ -95,7 +95,7 @@ select::-ms-expand { display: none; }
 
 .button.small { width: 100px; height: 40px; line-height: 40px; padding: 0; min-width: auto; margin: 0 2px; }
 
-.button.default { background: #108ad3; }
+.button.default { background: #108ad3 !important; font-size: 14px; line-height: 40px !important; padding: 0 !important; }
 
 .button.modify { background: #e8edf3; color: #444; }
 
@@ -270,6 +270,20 @@ select::-ms-expand { display: none; }
 .tabs li.actived a { color: #fff; background: #0a2f87; }
 
 .tabs a { display: block; height: 48px; line-height: 48px; text-align: center; background: #e8edf3; font-size: 14px; color: #000; }
+
+.tabs-small { position: relative; font-size: 0; margin-top: 20px; }
+
+.tabs-small:after { content: ''; position: absolute; bottom: 0; left: 0; width: 100%; height: 1px; background: #ddd; }
+
+.tabs-small li { display: inline-block; width: 100px; }
+
+.tabs-small li.actived a { background: #fff; border-left: 1px solid #ddd; border-right: 1px solid #ddd; }
+
+.tabs-small li.actived a:before { content: ''; position: absolute; top: 0; left: -1px; right: -1px; height: 3px; background: #108ad3; }
+
+.tabs-small li.actived a:after { content: ''; position: absolute; bottom: 0; left: -1px; right: 0; height: 1px; background: #fff; z-index: 5; }
+
+.tabs-small a { position: relative; display: block; height: 40px; line-height: 40px; text-align: center; background: #f6f6f6; font-size: 14px; color: #000; box-sizing: border-box; }
 
 .custom-input { display: block; border: 2px solid #d5d5d5; }
 
@@ -653,7 +667,7 @@ select::-ms-expand { display: none; }
 
 .member { font-size: 0; }
 
-.member .default { font-size: 14px; line-height: 100%; padding: 10px 0 50px 0; }
+.member .default { font-size: 14px; line-height: 100%; padding: 0 0 50px 0; }
 
 .member .login { background: #e8edf3; padding: 30px 0; text-align: center; }
 
@@ -774,3 +788,37 @@ select::-ms-expand { display: none; }
 .join .join-buttons { margin-top: 50px; text-align: center; }
 
 .join .join-buttons .button { margin: 0 4px; height: 40px; line-height: 40px; }
+
+.mypage { font-size: 0; }
+
+.mypage .default { font-size: 14px; line-height: 100%; padding: 0 0 50px 0; }
+
+.mypage .password-inputs { background: #e8edf3; padding: 60px 0; text-align: center; }
+
+.mypage .password-inputs label { margin-right: 10px; }
+
+.mypage .password-inputs .custom-input { width: 200px; display: inline-block; vertical-align: top; }
+
+.mypage .password-inputs .button { width: 100px; }
+
+.mypage .myinfo-list ul { width: 810px; margin-left: -15px; }
+
+.mypage .myinfo-list li { display: inline-block; vertical-align: top; width: 33.33%; margin-top: 20px; text-align: center; }
+
+.mypage .myinfo-list .in { position: relative; display: block; box-sizing: border-box; border: 1px solid #ddd; height: 200px; margin: 0 15px; }
+
+.mypage .myinfo-list .custom-checkbox { position: absolute; top: 10px; left: 10px; }
+
+.mypage .myinfo-list .infos { position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%); }
+
+.mypage .myinfo-list .type1 dt { display: inline-block; vertical-align: top; font-size: 14px; font-weight: 500; }
+
+.mypage .myinfo-list .type1 dd { display: inline-block; vertical-align: top; }
+
+.mypage .myinfo-list .type2 dt { font-size: 14px; font-weight: 500; }
+
+.mypage .myinfo-list button { width: 100px; margin-top: 20px; padding: 5px 0; background: #f6f6f6; border: 1px solid #ddd; font-size: 13px; }
+
+.mypage .note-search-form { background: #e8edf3; padding: 34px 0; text-align: center; border-left: 1px solid #ddd; border-right: 1px solid #ddd; }
+
+.mypage .note-box { border: 1px solid #ddd; border-top: 0; padding: 30px 30px 0 30px; box-sizing: border-box; }

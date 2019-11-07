@@ -34,3 +34,62 @@
     color:#000;
   }
 }
+
+.tabs-small{
+  position:relative;
+  font-size:0;
+  margin-top:20px;
+  &:after{
+    content:'';
+    position:absolute;
+    bottom:0;
+    left:0;
+    width:100%;
+    height:1px;
+    background:#ddd;
+  }
+  ul{
+
+  }
+  li{
+    display:inline-block;
+    width:100px;
+    &.actived{
+      a{
+        background:#fff;
+        border-left:1px solid #ddd;
+        border-right:1px solid #ddd;
+        &:before{
+          content:'';
+          position:absolute;
+          top:0;
+          left:-1px;
+          right:-1px;
+          height:3px;
+          background:#108ad3;
+        }
+        &:after{
+          content:'';
+          position:absolute;
+          bottom:0;
+          left:-1px;
+          right:0;
+          height:1px;
+          background:#fff;
+          z-index:5;
+        }
+      }
+    }
+  }
+  a{
+    position:relative;
+    display:block;
+    height:40px;
+    line-height:40px;
+    text-align:center;
+    background:#f6f6f6;
+    font-size:14px;
+    color:#000;
+    box-sizing: border-box;
+  }
+}

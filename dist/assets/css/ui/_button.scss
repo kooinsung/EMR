@@ -18,7 +18,9 @@
     margin:0 2px;
   }
   &.default{
-    background:#108ad3;
+    background:#108ad3 !important;font-size: 14px;
+    line-height: 40px !important;
+    padding: 0 !important;
   }
   &.modify{
     background:#e8edf3;
