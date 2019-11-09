@@ -1103,7 +1103,7 @@
 .mypage {
   font-size: 0;
 
-  .default {
+  >.default {
     font-size: 14px;
     line-height: 100%;
     padding: 0 0 50px 0;
@@ -1251,6 +1251,127 @@
     }
     .nn3{
       color:#f02011;
+    }
+  }
+  .rewrite-form{
+    box-sizing: border-box;
+    padding:40px;
+    border:1px solid #ddd;
+    margin-top:20px;
+    .in{
+      overflow:hidden;
+    }
+    .info1{
+      display:inline-block;
+      vertical-align: top;
+      width:316px;
+      float:left;
+      dl{
+        margin-top:20px;
+        overflow:hidden;
+        &:first-child{
+          margin-top:0;
+        }
+      }
+      dt{
+        font-size:16px;
+        font-weight:500;
+        float:left;
+        line-height:40px;
+        &.long{
+          line-height:150%;
+        }
+      }
+      dd{
+        width:200px;
+        float:right;
+      }
+    }
+    .info2{
+      display:inline-block;
+      vertical-align: top;
+      width:359px;
+      float:right;
+      p{
+        font-size:14px;
+        line-height:100%;
+        margin-bottom:6px;
+      }
+      .caphcha-box{
+        position:relative;
+        box-sizing: border-box;
+        border:1px solid #ddd;
+        margin-bottom: 11px;
+        .img{
+          display:block;
+          width:227px;
+          height:87px;
+        }
+      }
+      .caphcha-button{
+        position:absolute;
+        top:0;
+        right:0;
+        border-left:1px solid #ddd;
+        width:129px;
+        button{
+          width:100%;
+          height:43px;
+          color:#777;
+          box-sizing: border-box;
+          text-align:left;
+          padding-left:33px;
+          &:hover{
+            text-decoration: underline;
+          }
+        }
+        .refresh{
+          background:url('#{$imgPath}ico_refrash.png') 10px center no-repeat;
+        }
+        .voice{
+          border-top:1px solid #ddd;
+          background:url('#{$imgPath}ico_voice.png') 10px center no-repeat;
+        }
+      }
+    }
+    .info3{
+      text-align:center;
+      .dls{
+        width:325px;
+        display:inline-block;
+        vertical-align: top;
+      }
+      dl{
+        margin-top:20px;
+        overflow:hidden;
+        &:first-child{
+          margin-top:0;
+        }
+      }
+      dt{
+        font-size:16px;
+        font-weight:500;
+        float:left;
+        line-height:40px;
+        &.long{
+          line-height:150%;
+        }
+      }
+      dd{
+        width:200px;
+        float:right;
+      }
+      .button{
+        display:inline-block;
+        vertical-align: bottom;
+      }
+    }
+    .buttons{
+      text-align:center;
+      margin-top:30px;
+      a, button{
+        margin:0;
+      }
     }
   }
 }
