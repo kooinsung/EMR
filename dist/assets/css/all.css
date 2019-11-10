@@ -105,9 +105,13 @@ select::-ms-expand { display: none; }
 
 .status { font-size: 13px; box-sizing: border-box; border-style: solid; border-width: 2px; width: 80px; height: 30px; line-height: 26px; border-radius: 30px; }
 
+.status.short { width: 60px; }
+
 .status.type1 { border-color: #f02011; color: #f02011; }
 
 .status.type2 { border-color: #0a2f87; color: #0a2f87; }
+
+.status.type3 { border-color: #999; background: #999; color: #fff; }
 
 .board-search { background: #e8edf3; margin-bottom: 50px; padding: 30px 70px; font-size: 0; }
 
@@ -150,6 +154,8 @@ select::-ms-expand { display: none; }
 .tb-list tbody td.tit2 a { line-height: 49px; display: block; padding: 0 20px; font-size: 14px; color: #f02011; }
 
 .tb-list tbody td.tit2 a:hover { text-decoration: underline; }
+
+.tb-list tbody td.radios .custom-radio { margin: 0 4px; }
 
 .tb-list tbody td .view-number { display: inline-block; text-align: center; background: #108ad3; color: #fff; font-size: 14px; width: 60px; height: 28px; line-height: 28px; }
 
@@ -342,6 +348,20 @@ select::-ms-expand { display: none; }
 .custom-checkbox input[type=checkbox] + label:before { content: ''; position: absolute; top: 0; left: 0; width: 21px; height: 21px; background: #fff url("../images/ico_check-off.png") center center no-repeat; box-sizing: border-box; border: 1px solid #cbcbd0; }
 
 .custom-checkbox input[type=checkbox]:checked + label:before { background: #fff url("../images/ico_check-on.png") center center no-repeat; border: 1px solid #108ad3; }
+
+.custom-radio { display: inline-block; margin-right: 25px; }
+
+.custom-radio:last-child { margin-right: 0; }
+
+.custom-radio input { opacity: 0; position: absolute; }
+
+.custom-radio input[type=radio] + label { padding-left: 28px; height: 21px; line-height: 21px; color: #222; font-size: 14px; cursor: pointer; display: block; position: relative; }
+
+.custom-radio input[type=radio] + label:before { content: ''; position: absolute; top: 0; left: 0; width: 21px; height: 21px; border-radius: 21px; box-sizing: border-box; border: 1px solid #cbcbd0; }
+
+.custom-radio input[type=radio]:checked + label:before { border: 1px solid #108ad3; }
+
+.custom-radio input[type=radio]:checked + label:after { content: ''; position: absolute; top: 4px; left: 4px; width: 11px; height: 11px; border-radius: 11px; background: #108ad3; border: 1px solid #108ad3; }
 
 .modal { position: fixed; top: 0; right: 0; bottom: 0; left: 0; background: rgba(0, 0, 0, 0.6); z-index: 100; }
 

@@ -124,6 +124,11 @@
           }
         }
       }
+      &.radios{
+        .custom-radio{
+          margin:0 4px;
+        }
+      }
       .view-number{
         display:inline-block;
         text-align:center;
