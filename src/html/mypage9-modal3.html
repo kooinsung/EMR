@@ -1,0 +1,192 @@
+<!-- @@master ../include/layout.html -->
+<!-- @@block content -->
+<div class="sub-contents">
+  <div class="lnb">
+    <h2 class="depth1">마이페이지</h2>
+    <div class="menus">
+      <ul>
+        <li class="depth2">
+          <a href="">기본 정보</a>
+        </li>
+        <li class="depth2">
+          <a href="" class="actived">그룹 정보</a>
+        </li>
+        <li class="depth2">
+          <a href="">그룹 관리</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="content-view">
+    <div class="tops">
+      <h3 class="tit">그룹 정보</h3>
+      <div class="location">
+        <ul>
+          <li class="home"><a href="">home</a></li>
+          <li><a href="">마이페이지</a></li>
+          <li><a href="">그룹 정보</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="mypage">
+      <div class="tabs">
+        <ul>
+          <li class="actived"><a href="">내 그룹</a></li>
+        </ul>
+      </div>
+      <div class="group-info">
+        <div class="tb-list">
+          <table>
+            <colgroup>
+              <col style="width:25%;">
+              <col>
+              <col style="width:25%;">
+              <col style="width:25%;">
+            </colgroup>
+            <thead>
+            <tr>
+              <th>번호</th>
+              <th>제목</th>
+              <th>작성일자</th>
+              <th>조회수</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+              <td>가나다</td>
+              <td class="tit2"><a href="">그룹 상세 보기</a></td>
+              <td>승인</td>
+              <td><button type="button" class="status type1">탈퇴하기</button></td>
+            </tr>
+            <tr>
+              <td>가나다</td>
+              <td class="tit2"><a href="">그룹 상세 보기</a></td>
+              <td>미승인</td>
+              <td><button type="button" class="status type1">취소하기</button></td>
+            </tr>
+            <tr>
+              <td>가나다</td>
+              <td class="tit2"><a href="">그룹 상세 보기</a></td>
+              <td>반려됨</td>
+              <td><button type="button" class="status type2">재 신청</button></td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="tabs">
+        <ul>
+          <li><a href="">그룹 정보</a></li>
+          <li class="actived"><a href="">그룹원 정보</a></li>
+        </ul>
+      </div>
+      <div class="group-info">
+        <div class="tb-list">
+          <table>
+            <colgroup>
+              <col style="width:90px;">
+              <col style="width:90px;">
+              <col>
+              <col style="width:190px;">
+              <col style="width:94px;">
+              <col style="width:112px;">
+              <col style="width:112px;">
+            </colgroup>
+            <thead>
+            <tr>
+              <th>ID</th>
+              <th>닉네임</th>
+              <th>이름</th>
+              <th>이메일</th>
+              <th>권한</th>
+              <th>상세보기</th>
+              <th>쪽지발송</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+              <td>abc2334</td>
+              <td>비트맨1</td>
+              <td>김*균</td>
+              <td>A**@a**.com</td>
+              <td>그룹장</td>
+              <td><button type="button" class="status type2">상세보기</button></td>
+              <td><button type="button" class="status type2">쪽지 보내기</button></td>
+            </tr>
+            <tr>
+              <td>abc2334</td>
+              <td>비트맨1</td>
+              <td>김*균</td>
+              <td>A**@a**.com</td>
+              <td>그룹장</td>
+              <td><button type="button" class="status type2">상세보기</button></td>
+              <td><button type="button" class="status type2">쪽지 보내기</button></td>
+            </tr>
+            <tr>
+              <td>abc2334abc2334</td>
+              <td>비트맨1</td>
+              <td>김*균</td>
+              <td>A**@a**.com</td>
+              <td>그룹장</td>
+              <td><button type="button" class="status type2">상세보기</button></td>
+              <td><button type="button" class="status type2">쪽지 보내기</button></td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- @@close -->
+
+<!-- @@block  =  modal-->
+<div class="modal small">
+  <div class="modal-inner">
+    <div class="modal-title">
+      <strong>신규커뮤니티 신청</strong>
+      <button type="button" class="close">close</button>
+    </div>
+    <div class="modal-body">
+      <div class="person-info">
+        <dl>
+          <dt>보내는사람 : </dt>
+          <dd>비트맨1(abc2334)</dd>
+        </dl>
+        <dl>
+          <dt>받는사람 : </dt>
+          <dd>복지맨(ieu445)</dd>
+        </dl>
+      </div>
+      <div class="modal-table">
+        <table>
+          <colgroup>
+            <col style="width:80px;">
+            <col>
+          </colgroup>
+          <tbody>
+          <tr>
+            <th>제목</th>
+            <td>
+              <span class="custom-input"><input type="text" placeholder="제목 입력"></span>
+            </td>
+          </tr>
+          <tr>
+            <th>내용</th>
+            <td>
+              <span class="custom-textarea">
+                <textarea name="" id="" rows="10" placeholder="내용 입력"></textarea>
+              </span>
+            </td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="modal-button">
+      <button type="button" class="button small default">전송</button><button type="button" class="button small cancel">취소</button>
+    </div>
+  </div>
+</div>
+<!-- @@close-->

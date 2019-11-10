@@ -1,0 +1,101 @@
+<!-- @@master ../include/layout.html -->
+<!-- @@block content -->
+<div class="sub-contents">
+  <div class="lnb">
+    <h2 class="depth1">마이페이지</h2>
+    <div class="menus">
+      <ul>
+        <li class="depth2">
+          <a href="">기본 정보</a>
+        </li>
+        <li class="depth2">
+          <a href="" class="actived">그룹 정보</a>
+        </li>
+        <li class="depth2">
+          <a href="">그룹 관리</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="content-view">
+    <div class="tops">
+      <h3 class="tit">그룹 정보</h3>
+      <div class="location">
+        <ul>
+          <li class="home"><a href="">home</a></li>
+          <li><a href="">마이페이지</a></li>
+          <li><a href="">그룹 정보</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="mypage">
+      <div class="tabs">
+        <ul>
+          <li class="actived"><a href="">내 그룹</a></li>
+          <li><a href="">쪽지관리</a></li>
+        </ul>
+      </div>
+      <div class="group-info">
+        <div class="tb-list">
+          <table>
+            <colgroup>
+              <col style="width:25%;">
+              <col>
+              <col style="width:25%;">
+              <col style="width:25%;">
+            </colgroup>
+            <thead>
+            <tr>
+              <th>번호</th>
+              <th>제목</th>
+              <th>작성일자</th>
+              <th>조회수</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+              <td>가나다</td>
+              <td class="tit2"><a href="">그룹 상세 보기</a></td>
+              <td>승인</td>
+              <td><button type="button" class="status type1">탈퇴하기</button></td>
+            </tr>
+            <tr>
+              <td>가나다</td>
+              <td class="tit2"><a href="">그룹 상세 보기</a></td>
+              <td>미승인</td>
+              <td><button type="button" class="status type1">취소하기</button></td>
+            </tr>
+            <tr>
+              <td>가나다</td>
+              <td class="tit2"><a href="">그룹 상세 보기</a></td>
+              <td>반려됨</td>
+              <td><button type="button" class="status type2">재 신청</button></td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- @@close -->
+
+<!-- @@block  =  modal-->
+<div class="modal small">
+  <div class="modal-inner">
+    <div class="modal-title">
+      <strong>탈퇴 완료</strong>
+      <button type="button" class="close">close</button>
+    </div>
+    <div class="modal-body">
+      <div class="default-text">
+        그룹 탈퇴가 완료 되었습니다.
+      </div>
+    </div>
+    <div class="modal-button">
+      <button type="button" class="button small default">확인</button>
+    </div>
+  </div>
+</div>
+<!-- @@close-->

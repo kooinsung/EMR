@@ -112,6 +112,18 @@
           }
         }
       }
+      &.tit2 {
+        a {
+          line-height: 49px;
+          display: block;
+          padding: 0 20px;
+          font-size: 14px;
+          color: #f02011;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
       .view-number{
         display:inline-block;
         text-align:center;

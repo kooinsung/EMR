@@ -15,7 +15,7 @@
     line-height:40px;
     padding:0;
     min-width:auto;
-    margin:0 2px;
+    margin:0 4px;
   }
   &.default{
     background:#108ad3;
@@ -34,5 +34,24 @@
   &.cancel{
     background:#e8edf3;
     color:#444;
+  }
+}
+
+.status{
+  font-size:13px;
+  box-sizing: border-box;
+  border-style: solid;
+  border-width: 2px;
+  width:80px;
+  height:30px;
+  line-height:26px;
+  border-radius:30px;
+  &.type1{
+    border-color: #f02011;
+    color:#f02011;
+  }
+  &.type2{
+    border-color: #0a2f87;
+    color:#0a2f87;
   }
 }

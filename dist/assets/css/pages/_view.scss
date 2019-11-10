@@ -1175,7 +1175,8 @@
     button{
       width:100px;
       margin-top:20px;
-      padding:5px 0;
+      height:24px;
+      line-height:22px;
       background:#f6f6f6;
       border:1px solid #ddd;
       font-size:13px;
@@ -1371,6 +1372,75 @@
       margin-top:30px;
       a, button{
         margin:0;
+      }
+    }
+  }
+  .group-info{
+    margin:20px 0 50px 0;
+  }
+  .group-list{
+    ul{
+      width:810px;
+      margin-left:-15px;
+    }
+    li{
+      display:inline-block;
+      vertical-align: top;
+      width:33.33%;
+      margin-bottom:20px;
+      text-align:center;
+    }
+    .in{
+      position:relative;
+      display:block;
+      box-sizing: border-box;
+      border:1px solid #ddd;
+      height:200px;
+      margin:0 15px;
+    }
+    .info1{
+      position:relative;
+      background:#f6f6f6;
+      height:75px;
+      overflow:hidden;
+      .name{
+        display:block;
+        font-size:14px;
+        font-weight:600;
+        padding-top: 35px;
+      }
+      .num{
+        position:absolute;
+        top:7px;
+        right:10px;
+        font-size:12px;
+        color:#777;
+        line-height:100%;
+      }
+    }
+    .info2{
+      dl{
+        margin-top:30px;
+      }
+      dt{
+        display:inline-block;
+        vertical-align: top;
+        font-size:14px;
+        font-weight:600;
+      }
+      dd{
+        display:inline-block;
+        vertical-align: top;
+        color:#222;
+      }
+      button{
+        width:70px;
+        margin-top:20px;
+        height:24px;
+        line-height:22px;
+        background:#f6f6f6;
+        border:1px solid #ddd;
+        font-size:13px;
       }
     }
   }
