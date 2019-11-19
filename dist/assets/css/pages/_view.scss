@@ -605,6 +605,162 @@
   }
 }
 
+.auth-intro{
+  h4{
+    font-size:18px;
+    font-weight:600;
+    display:block;
+    margin-bottom:30px;
+  }
+  .three{
+    position:relative;
+    &:after{
+      content:'';
+      position:absolute;
+      bottom:-32px;
+      left:50%;
+      width:545px;
+      height:35px;
+      margin-left:-273px;
+      background:url('#{$imgPath}ico_pto.png') center center no-repeat;
+    }
+    li{
+      display:inline-block;
+      vertical-align: top;
+      box-sizing: border-box;
+      width:242px;
+      margin-left:26px;
+      &:first-child{
+        margin-left:0;
+      }
+      .tit{
+        display:block;
+        height:60px;
+        line-height:60px;
+        text-align:center;
+        color:#fff;
+        background:#0a2f87;
+        font-size:16px;
+        font-weight:600;
+      }
+      .box{
+        border:1px solid #ddd;
+        border-top:0;
+        padding:15px 18px;
+        height:180px;
+        letter-spacing:-0.5px;
+      }
+    }
+  }
+  .solo{
+    background:#108ad3;
+    height:60px;
+    line-height:60px;
+    text-align:center;
+    color:#fff;
+    font-size:14px;
+    border-radius:60px;
+    margin:40px 0 45px 0;
+  }
+  .two{
+    overflow:hidden;
+    li{
+      display:inline-block;
+      vertical-align: top;
+      width:380px;
+      text-align:center;
+      &:first-child{
+        float:left;
+      }
+      &:last-child{
+        float:right;
+      }
+      .tit{
+        display:block;
+        height:60px;
+        line-height:60px;
+        text-align:center;
+        color:#fff;
+        background:#0a2f87;
+        font-size:16px;
+        font-weight:600;
+      }
+      .box{
+        box-sizing: border-box;
+        margin-top:10px;
+        height:295px;
+        box-sizing: border-box;
+        border:1px solid #ddd;
+        padding:25px 0 0 0;
+      }
+      .dls{
+        position:relative;
+        &:after{
+          content:'';
+          position:absolute;
+          top:50%;
+          right:50%;
+          width:21px;
+          height:21px;
+          margin:-10px -10px 0 0;
+          background:url('#{$imgPath}ico_arrow2.png') center center no-repeat;
+        }
+        dl{
+          width:110px;
+          height:110px;
+          border-radius: 110px;
+          background:#108ad3;
+          display:inline-block;
+          vertical-align: top;
+          font-size:14px;
+          margin:30px;
+          box-sizing: border-box;
+        }
+        dt{
+          color:#ffff00;
+          margin-top:25px;
+        }
+        dd{
+          color:#fff;
+          margin-top:5px;
+          line-height:120%;
+        }
+      }
+    }
+  }
+  table{
+    width:100%;
+    border-top:2px solid #0a2f87;
+    text-align:center;
+    margin:30px 0 50px 0;
+    thead{
+      th{
+        font-size:14px;
+        font-weight:600;
+        background:#e8edf3;
+        padding:10px;
+        border-bottom:1px solid #ddd;
+        border-left:1px solid #ddd;
+        &:first-child{
+          border-left:0;
+        }
+      }
+    }
+    tbody{
+      td{
+        font-size:14px;
+        color:#222;
+        border-bottom:1px solid #ddd;
+        border-left:1px solid #ddd;
+        padding:15px 10px;
+        &:first-child{
+          border-left:0;
+        }
+      }
+    }
+  }
+}
+
 .total-search{
   margin:100px 0 0 0;
   .total-search-menus{

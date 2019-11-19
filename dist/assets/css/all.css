@@ -661,7 +661,7 @@ input.ui-button::-moz-focus-inner, button.ui-button::-moz-focus-inner { border: 
 
 .header .util { position: absolute; bottom: 20px; right: 0; text-align: right; }
 
-.header .util .after-login { position: relative; display: inline-block; background: #0a2f87; height: 24px; line-height: 24px; border-radius: 3px; padding: 0 40px 0 6px; margin: 20px 0 3px 0; }
+.header .util .after-login { position: relative; display: inline-block; background: #0a2f87; height: 24px; line-height: 22px; border-radius: 3px; padding: 0 40px 0 6px; margin: 20px 0 3px 0; }
 
 .header .util .after-login .user { color: #fff; font-size: 12px; }
 
@@ -926,6 +926,54 @@ input.ui-button::-moz-focus-inner, button.ui-button::-moz-focus-inner { border: 
 .auth-result .aco-td2 .info2 { font-size: 14px; margin-top: 30px; }
 
 .auth-result .aco-td2 .info3 { font-size: 14px; margin-top: 20px; }
+
+.auth-intro h4 { font-size: 18px; font-weight: 600; display: block; margin-bottom: 30px; }
+
+.auth-intro .three { position: relative; }
+
+.auth-intro .three:after { content: ''; position: absolute; bottom: -32px; left: 50%; width: 545px; height: 35px; margin-left: -273px; background: url("../images/ico_pto.png") center center no-repeat; }
+
+.auth-intro .three li { display: inline-block; vertical-align: top; box-sizing: border-box; width: 242px; margin-left: 26px; }
+
+.auth-intro .three li:first-child { margin-left: 0; }
+
+.auth-intro .three li .tit { display: block; height: 60px; line-height: 60px; text-align: center; color: #fff; background: #0a2f87; font-size: 16px; font-weight: 600; }
+
+.auth-intro .three li .box { border: 1px solid #ddd; border-top: 0; padding: 15px 18px; height: 180px; letter-spacing: -0.5px; }
+
+.auth-intro .solo { background: #108ad3; height: 60px; line-height: 60px; text-align: center; color: #fff; font-size: 14px; border-radius: 60px; margin: 40px 0 45px 0; }
+
+.auth-intro .two { overflow: hidden; }
+
+.auth-intro .two li { display: inline-block; vertical-align: top; width: 380px; text-align: center; }
+
+.auth-intro .two li:first-child { float: left; }
+
+.auth-intro .two li:last-child { float: right; }
+
+.auth-intro .two li .tit { display: block; height: 60px; line-height: 60px; text-align: center; color: #fff; background: #0a2f87; font-size: 16px; font-weight: 600; }
+
+.auth-intro .two li .box { box-sizing: border-box; margin-top: 10px; height: 295px; box-sizing: border-box; border: 1px solid #ddd; padding: 25px 0 0 0; }
+
+.auth-intro .two li .dls { position: relative; }
+
+.auth-intro .two li .dls:after { content: ''; position: absolute; top: 50%; right: 50%; width: 21px; height: 21px; margin: -10px -10px 0 0; background: url("../images/ico_arrow2.png") center center no-repeat; }
+
+.auth-intro .two li .dls dl { width: 110px; height: 110px; border-radius: 110px; background: #108ad3; display: inline-block; vertical-align: top; font-size: 14px; margin: 30px; box-sizing: border-box; }
+
+.auth-intro .two li .dls dt { color: #ffff00; margin-top: 25px; }
+
+.auth-intro .two li .dls dd { color: #fff; margin-top: 5px; line-height: 120%; }
+
+.auth-intro table { width: 100%; border-top: 2px solid #0a2f87; text-align: center; margin: 30px 0 50px 0; }
+
+.auth-intro table thead th { font-size: 14px; font-weight: 600; background: #e8edf3; padding: 10px; border-bottom: 1px solid #ddd; border-left: 1px solid #ddd; }
+
+.auth-intro table thead th:first-child { border-left: 0; }
+
+.auth-intro table tbody td { font-size: 14px; color: #222; border-bottom: 1px solid #ddd; border-left: 1px solid #ddd; padding: 15px 10px; }
+
+.auth-intro table tbody td:first-child { border-left: 0; }
 
 .total-search { margin: 100px 0 0 0; }
 
