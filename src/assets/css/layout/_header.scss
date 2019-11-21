@@ -50,7 +50,7 @@
       height:24px;
       line-height:22px;
       border-radius:3px;
-      padding:0 40px 0 6px;
+      padding:0 46px 0 6px;
       margin:20px 0 3px 0;
       .user{
         color:#fff;
@@ -61,9 +61,23 @@
         top:0;
         right:0;
         text-indent:-9999px;
-        width:28px;
+        width:45px;
         height:24px;
-        background:url('#{$imgPath}ico_mail.png') center center no-repeat;
+        background:url('#{$imgPath}ico_mail.png') 9px center no-repeat;
+      }
+      .number{
+        position:absolute;
+        top:1px;
+        right:6px;
+        width:16px;
+        height:16px;
+        line-height:14px;
+        text-align:center;
+        border-radius:16px;
+        background:#fff;
+        font-size:12px;
+        background:#fff;
+        color:#f02011;
       }
     }
     ul{
@@ -97,6 +111,7 @@
     a{
       display:block;
       color:#555;
+      font-size:12px;
       &.actived{
         color:#017eba;
       }
@@ -152,6 +167,8 @@
     display:inline-block;
     vertical-align: top;
     width:16.66%;
+    height:178px;
+    box-sizing: border-box;
     ul{
       margin:25px 0 0 20px;
     }

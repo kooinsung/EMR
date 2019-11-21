@@ -13,7 +13,6 @@ EMDUI = (function () {
           autoWidth:true,
         })
 
-        //TO-DO : 스크립트 개선
         $('.gnb li').each(function(i){
           $(this).mouseenter(function(){
             $(this).addClass('actived');
@@ -25,6 +24,15 @@ EMDUI = (function () {
 
         $('.gnb-area').mouseleave(function(){
           $('.gnb-depth').hide();
+        });
+
+        $('.gnb-depth-item').each(function(i){
+          $(this).mouseenter(function(){
+            $('.gnb li').eq(i).addClass('actived');
+            $('.gnb-depth').show();
+          }).mouseleave(function(){
+            $('.gnb li').eq(i).removeClass('actived');
+          });
         });
 
         //아코디언
@@ -74,6 +82,32 @@ EMDUI = (function () {
         });
         $(".datepicker input").click(function () {
           $(this).parent().find('input').datepicker("show");
+        });
+
+        var $visualCarousel = $(".visual .visual-carousel");
+        $visualCarousel.owlCarousel({
+          navigation : false,
+          pagination: true,
+          singleItem:true,
+          autoPlay:true,
+          slideSpeed:500,
+          rewindSpeed:500,
+        })
+
+        var $bannerCarousel = $(".banners .banner-carousel");
+        $bannerCarousel.owlCarousel({
+          navigation : false,
+          pagination: false,
+          singleItem:true,
+          autoPlay:true,
+          slideSpeed:500,
+          rewindSpeed:500,
+        })
+        $(".banners .next").click(function(){
+          $bannerCarousel.trigger('owl.next');
+        });
+        $(".banners .prev").click(function(){
+          $bannerCarousel.trigger('owl.prev');
         });
       }
     }
