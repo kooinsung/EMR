@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
 html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, a, address, del, em, img, strong, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, main, menu, nav, output, ruby, section, summary, time, mark, audio, video, textarea { margin: 0; padding: 0; border: 0; }
 
@@ -197,6 +198,8 @@ select::-ms-expand { display: none; }
 
 .button.default { background: #108ad3; font-size: 14px; line-height: 40px; padding: 0 20px 0 20px; }
 
+.button.default.short { min-width: 50px; width: 50px; padding: 0; }
+
 .button.modify { background: #e8edf3; color: #444; }
 
 .button.delete { background: #e8edf3; color: #444; }
@@ -212,6 +215,14 @@ select::-ms-expand { display: none; }
 .status.type2 { border-color: #0a2f87; color: #0a2f87; }
 
 .status.type3 { border-color: #999; background: #999; color: #fff; }
+
+.top-buttons { position: absolute; top: 3px; right: 0; }
+
+.top-buttons button { position: relative; font-size: 12px; border: 1px solid #ddd; background: #f6f6f6; border-radius: 2px; height: 20px; line-height: 18px; vertical-align: top; margin-left: 4px; padding: 0 5px; box-sizing: border-box; }
+
+.top-buttons button.download { background: url("../images/ico_download.png") 5px center no-repeat; padding-left: 20px; }
+
+.top-buttons button.print { background: url("../images/ico_print.png") 5px center no-repeat; padding-left: 20px; }
 
 .board-search { background: #e8edf3; margin-bottom: 50px; padding: 30px 70px; font-size: 0; }
 
@@ -229,13 +240,27 @@ select::-ms-expand { display: none; }
 
 .board-search-input input { font-size: 13px; color: #777; width: 100%; height: 100%; text-indent: 16px; }
 
-.tb-list { border-top: 2px solid #0a2f87; border-bottom: 1px solid #ddd; }
+.tb-list { border-top: 2px solid #0a2f87; }
+
+.tb-list.scroll { overflow-y: auto; }
+
+.tb-list.scroll table { width: 300%; }
+
+.tb-list.scroll thead th { height: auto; background: #e8edf3; text-align: center; font-size: 14px; font-weight: 700; padding: 5px 10px; }
+
+.tb-list.scroll tbody td { height: auto; padding: 5px 10px; }
 
 .tb-list table { width: 100%; table-layout: fixed; }
 
-.tb-list thead th { height: 48px; background: #e8edf3; text-align: center; font-size: 14px; font-weight: 700; }
+.tb-list thead th { height: 48px; background: #e8edf3; text-align: center; font-size: 14px; font-weight: 700; border-bottom: 1px solid #ddd; border-left: 1px solid #ddd; }
 
-.tb-list tbody td { height: 49px; text-align: center; font-size: 14px; border-top: 1px solid #ddd; }
+.tb-list thead th:first-child { border-left: 0; }
+
+.tb-list tbody td { height: 49px; text-align: center; font-size: 14px; border-bottom: 1px solid #ddd; border-left: 1px solid #ddd; padding: 0 10px; }
+
+.tb-list tbody td.bg { background: #e8edf3; }
+
+.tb-list tbody td:first-child { border-left: 0; }
 
 .tb-list tbody td.left { text-align: left !important; }
 
@@ -963,6 +988,8 @@ input.ui-button::-moz-focus-inner, button.ui-button::-moz-focus-inner { border: 
 
 .content-view { margin: 0 0 0 220px; padding-top: 65px; }
 
+.content-view.long { margin-left: 0; }
+
 .content-view .tops { position: relative; border-bottom: 1px solid #ddd; padding-bottom: 25px; margin-bottom: 40px; }
 
 .content-view .tops .tit { font-size: 24px; font-weight: 700; }
@@ -1007,13 +1034,15 @@ input.ui-button::-moz-focus-inner, button.ui-button::-moz-focus-inner { border: 
 
 .community-comment strong { font-size: 14px; }
 
-.terms-result { margin-top: 40px; }
+.terms-result { position: relative; margin-top: 40px; }
 
 .terms-result .terms-result-title { display: block; font-size: 18px; margin-bottom: 20px; }
 
 .terms-result .tb-list thead th { font-size: 13px; line-height: 130%; }
 
 .terms-result .tb-list tbody td { font-size: 13px; line-height: 130%; }
+
+.auth-result { position: relative; }
 
 .auth-result .auth-result-title { font-size: 18px; margin-bottom: 30px; }
 
@@ -1037,17 +1066,17 @@ input.ui-button::-moz-focus-inner, button.ui-button::-moz-focus-inner { border: 
 
 .auth-result .auth-result-form .mix { position: relative; }
 
-.auth-result .auth-result-form .mix input { box-sizing: border-box; width: 570px; height: 40px; border: 2px solid #d5d5d5; text-indent: 15px; }
+.auth-result .auth-result-form .mix input { box-sizing: border-box; width: 640px; height: 40px; border: 2px solid #d5d5d5; text-indent: 15px; }
 
 .auth-result .auth-result-form .mix button { position: absolute; top: 0; right: 0; width: 100px; height: 40px; line-height: 40px; text-align: center; font-size: 14px; font-weight: bold; color: #fff; background: #108ad3; }
 
 .auth-result .aco-td { position: relative; text-align: left; font-size: 0; }
 
-.auth-result .aco-td .number { width: 80px; display: inline-block; vertical-align: top; text-align: center; height: 48px; line-height: 48px; font-size: 14px; }
+.auth-result .aco-td .number { width: 80px; display: inline-block; vertical-align: top; text-align: center; height: 48px; line-height: 48px; font-size: 14px; box-sizing: border-box; }
 
-.auth-result .aco-td .part { width: 160px; display: inline-block; vertical-align: top; text-align: center; height: 48px; line-height: 48px; font-size: 14px; }
+.auth-result .aco-td .part { width: 160px; display: inline-block; vertical-align: top; text-align: center; height: 48px; line-height: 48px; font-size: 14px; border-left: 1px solid #ddd; box-sizing: border-box; }
 
-.auth-result .aco-td .detail { display: inline-block; vertical-align: top; padding: 0 10px; height: 48px; line-height: 48px; font-size: 14px; }
+.auth-result .aco-td .detail { display: inline-block; vertical-align: top; padding: 0 10px; height: 48px; line-height: 48px; font-size: 14px; box-sizing: border-box; border-left: 1px solid #ddd; }
 
 .auth-result .aco-td .aco-toggle { position: absolute; top: 50%; right: 0; width: 80px; height: 30px; margin-top: -15px; line-height: 26px; box-sizing: border-box; border: 2px solid #0a2f87; border-radius: 30px; padding-left: 10px; text-align: left; font-size: 12px; }
 
@@ -1151,8 +1180,6 @@ input.ui-button::-moz-focus-inner, button.ui-button::-moz-focus-inner { border: 
 
 .total-search-list a { display: block; font-size: 13px; padding: 15px 10px; }
 
-.total-search-list a em { color: #f02011; }
-
 .total-search-empty { text-align: center; font-size: 26px; margin-top: 90px; }
 
 .total-search-empty strong { color: #f02011; font-weight: normal; }
@@ -1161,25 +1188,75 @@ input.ui-button::-moz-focus-inner, button.ui-button::-moz-focus-inner { border: 
 
 .member { font-size: 0; }
 
-.member .default { font-size: 14px; line-height: 100%; padding: 0 0 50px 0; }
+.member .default { font-size: 14px; line-height: 180%; padding: 0 0 50px 0; }
 
-.member .login { background: #e8edf3; padding: 30px 0; text-align: center; }
+.member .login-form { position: relative; overflow: hidden; }
 
-.member .login .login-inputs { display: inline-block; vertical-align: top; }
+.member .login-form:after { content: ''; position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%); width: 1px; height: 157px; background: #ddd; }
 
-.member .login .login-inputs .login-input { padding: 5px 0; }
+.member .login-form .title { display: block; font-size: 18px; font-weight: 700; line-height: 100%; margin-bottom: 20px; }
 
-.member .login .login-inputs label { display: inline-block; vertical-align: top; font-size: 16px; font-weight: 700; width: 75px; line-height: 40px; }
+.member .login-form .login1 { width: 330px; float: left; }
 
-.member .login .login-inputs .custom-input { display: inline-block; vertical-align: top; border: 2px solid #d5d5d5; width: 160px; }
+.member .login-form .official-buttons { position: relative; height: 90px; }
 
-.member .login .buttons { font-size: 0; display: inline-block; vertical-align: top; margin-top: 5px; }
+.member .login-form .official-buttons .big { display: inline-block; width: 160px; height: 90px; line-height: 90px; text-align: center; color: #fff; background: #108ad3; font-size: 14px; font-weight: 700; box-sizing: border-box; position: absolute; top: 0; left: 0; }
 
-.member .login .buttons button { background: #108ad3; height: 90px; line-height: 90px; text-align: center; font-weight: 700; font-size: 14px; color: #fff; margin-left: 10px; }
+.member .login-form .official-buttons .small { margin-left: 170px; margin-bottom: 10px; display: block; width: 160px; height: 40px; line-height: 40px; text-align: center; box-sizing: border-box; background: #f6f6f6; border: 1px solid #ddd; }
 
-.member .login .buttons button:first-child { width: 100px; }
+.member .login-form .login2 { width: 330px; float: right; }
 
-.member .login .buttons button:last-child { width: 160px; }
+.member .login-form .login2 .login-inputs { position: relative; }
+
+.member .login-form .login2 .login-inputs .login-input { width: 220px; margin-bottom: 10px; }
+
+.member .login-form .login2 .login-inputs .login-input label { width: 67px; line-height: 40px; display: inline-block; vertical-align: top; }
+
+.member .login-form .login2 .login-inputs .login-input .custom-input { width: 149px; display: inline-block; vertical-align: top; }
+
+.member .login-form .login2 .login-inputs button { display: inline-block; width: 100px; height: 90px; line-height: 90px; text-align: center; color: #fff; background: #108ad3; font-size: 14px; font-weight: 700; box-sizing: border-box; position: absolute; top: 0; right: 0; }
+
+.member .login-form .login-util { position: relative; overflow: hidden; }
+
+.member .login-form .login-util .links { float: right; line-height: 21px; }
+
+.member .login-form .login-util .links a { position: relative; display: inline-block; padding: 0 7px; }
+
+.member .login-form .login-util .links a:after { content: ''; position: absolute; top: 50%; right: 0; width: 1px; height: 13px; margin-top: -7px; background: #d5d5d5; }
+
+.member .login-form .login-util .links a:last-child { padding-right: 0; }
+
+.member .login-form .login-util .links a:last-child:after { display: none; }
+
+.member .official-login { background: #e8edf3; padding: 30px 0; text-align: center; }
+
+.member .official-login .login-inputs { display: inline-block; vertical-align: top; }
+
+.member .official-login .login-inputs .login-input { padding: 5px 0; }
+
+.member .official-login .login-inputs label { display: inline-block; vertical-align: top; font-size: 16px; font-weight: 700; width: 105px; line-height: 40px; }
+
+.member .official-login .login-inputs label.multiple { line-height: 130%; }
+
+.member .official-login .login-inputs label.multiple em { display: block; font-size: 13px; font-weight: normal; }
+
+.member .official-login .login-inputs .custom-inputs { position: relative; width: 324px; display: inline-block; vertical-align: top; overflow: hidden; }
+
+.member .official-login .login-inputs .custom-inputs .custom-input { width: 140px; }
+
+.member .official-login .login-inputs .custom-inputs .custom-input:first-child { float: left; }
+
+.member .official-login .login-inputs .custom-inputs .custom-input:last-child { float: right; }
+
+.member .official-login .login-inputs .custom-input { display: inline-block; vertical-align: top; border: 2px solid #d5d5d5; width: 320px; }
+
+.member .official-login .login-inputs .bar { position: absolute; top: 0; left: 50%; display: inline-block; vertical-align: top; margin-left: -17px; width: 34px; line-height: 40px; text-align: center; box-sizing: border-box; }
+
+.member .official-login .login-inputs .bar:before { content: ''; position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%); width: 10px; height: 1px; background: #8d8d8d; }
+
+.member .official-login .buttons { font-size: 0; display: inline-block; vertical-align: top; margin-top: 5px; }
+
+.member .official-login .buttons button { background: #108ad3; height: 90px; line-height: 90px; text-align: center; font-weight: 700; font-size: 14px; color: #fff; margin-left: 10px; width: 100px; }
 
 .member .password-search-form { font-size: 0; background: #e8edf3; padding: 40px 0; text-align: center; }
 
@@ -1203,9 +1280,59 @@ input.ui-button::-moz-focus-inner, button.ui-button::-moz-focus-inner { border: 
 
 .member .id-search-form .result { font-size: 18px; }
 
-.join { width: 500px; margin: 0 auto; }
+.member .official-login-info h4 { font-size: 18px; font-weight: 700; display: block; margin-top: 50px; margin-bottom: 30px; }
 
-.join .join-logo { display: block; padding: 60px 0; }
+.member .official-login-info h4:first-child { margin-top: 0; }
+
+.member .official-login-info .step-diagram { font-size: 0; }
+
+.member .official-login-info .step-diagram li { display: inline-block; vertical-align: top; width: 170px; height: 50px; line-height: 50px; border-radius: 50px; border: 2px solid #ef9200; margin-left: 28px; text-align: center; }
+
+.member .official-login-info .step-diagram li:first-child { margin-left: 0; }
+
+.member .official-login-info .step-diagram li.two { padding-top: 10px; line-height: 120%; height: 40px; }
+
+.member .official-login-info .step-diagram li.success { border: 2px solid #108ad3; }
+
+.member .official-login-info .step-info { margin: 20px 0 0 0; }
+
+.member .official-login-info .step-info dl { line-height: 150%; overflow: hidden; }
+
+.member .official-login-info .step-info dt { float: left; margin-right: 3px; }
+
+.member .official-login-info .step-info dd { float: left; }
+
+.member .official-login-info .step-info .noti { display: block; color: #f02011; }
+
+.member .official-login-info .tb-noti { display: block; margin-top: 5px; font-size: 12px; color: #777; }
+
+.member .official-login-info .officlal-icon { display: inline-block; height: 23px; line-height: 23px; padding-left: 35px; margin-left: 50px; }
+
+.member .official-login-info .officlal-icon.type1 { background: url("../images/ico_officlal-type1.png") 2px center no-repeat; }
+
+.member .official-login-info .officlal-icon.type2 { background: url("../images/ico_officlal-type2.png") left center no-repeat; }
+
+.member .official-login-info .officlal-icon.type3 { background: url("../images/ico_officlal-type3.png") 6px center no-repeat; }
+
+.member .official-login-info .officlal-icon.type4 { background: url("../images/ico_officlal-type4.png") 5px center no-repeat; }
+
+.member .official-login-info .officlal-icon.type5 { background: url("../images/ico_officlal-type5.png") 3px center no-repeat; }
+
+.member .official-login-info .officlal-icon.type6 { background: url("../images/ico_officlal-type6.png") 3px center no-repeat; }
+
+.member .official-login-info .officlal-txts { padding: 20px 10px; }
+
+.member .official-login-info .officlal-way { color: #222; font-size: 14px; margin-top: 10px; line-height: 170%; }
+
+.member .official-login-info .officlal-way dt { font-weight: 700; }
+
+.member .official-login-info .officlal-way dd.tip { color: #f02011; }
+
+.member .official-login-info .officlal-link { color: #108ad3; }
+
+.join .default { font-size: 14px; }
+
+.join .join-step { margin: 40px 0 0 0; }
 
 .join .join-step li { position: relative; display: inline-block; vertical-align: top; width: 25%; box-sizing: border-box; color: #fff; padding-left: 15px; height: 37px; line-height: 37px; background: #0a2f87; }
 
@@ -1220,6 +1347,8 @@ input.ui-button::-moz-focus-inner, button.ui-button::-moz-focus-inner { border: 
 .join .join-step li:last-child:after { display: none; }
 
 .join .join-step p { font-size: 14px; margin-top: 5px; margin-bottom: 40px; }
+
+.join .all-check { margin: 20px 0 0 0; }
 
 .join .all-check input { opacity: 0; position: absolute; }
 
@@ -1247,7 +1376,7 @@ input.ui-button::-moz-focus-inner, button.ui-button::-moz-focus-inner { border: 
 
 .join .solo-check input[type=checkbox]:checked + label:before { background: url("../images/ico_circle-check-on.png") center center no-repeat; }
 
-.join .join-input { position: relative; margin-bottom: 30px; }
+.join .join-input { position: relative; }
 
 .join .join-input label { display: block; font-size: 16px; font-weight: 700; line-height: 100%; margin-bottom: 10px; }
 
@@ -1257,7 +1386,7 @@ input.ui-button::-moz-focus-inner, button.ui-button::-moz-focus-inner { border: 
 
 .join .join-input .phone { font-size: 0; }
 
-.join .join-input .phone .custom-input { position: relative; width: 140px; display: inline-block; margin-left: 34px; }
+.join .join-input .phone .custom-input { position: relative; width: 86px; display: inline-block; margin-left: 34px; }
 
 .join .join-input .phone .custom-input:first-child { margin-left: 0; }
 
@@ -1269,7 +1398,27 @@ input.ui-button::-moz-focus-inner, button.ui-button::-moz-focus-inner { border: 
 
 .join .join-input .custom-checkbox label { font-weight: normal; }
 
-.join .auth-buttons { margin-top: 40px; font-size: 0; }
+.join .passwords { overflow: hidden; }
+
+.join .passwords .join-input { width: 165px; display: inline-block; }
+
+.join .passwords .join-input:first-child { float: left; }
+
+.join .passwords .join-input:last-child { float: right; margin: 0 !important; }
+
+.join .step2 { background: #e8edf3; overflow: hidden; padding: 40px 0; margin-top: 20px; }
+
+.join .step3 { font-size: 0; margin-top: 20px; }
+
+.join .step3 .row { position: relative; margin-bottom: 30px; }
+
+.join .step3 .col { width: 50%; display: inline-block; vertical-align: top; box-sizing: border-box; }
+
+.join .step3 .col:first-child .join-input { margin-right: 50px; }
+
+.join .step3 .col:last-child .join-input { margin-left: 50px; }
+
+.join .auth-buttons { width: 500px; margin: 0 auto; font-size: 0; }
 
 .join .auth-buttons button { text-align: left; display: inline-block; vertical-align: top; width: 240px; height: 120px; line-height: 130%; font-weight: 700; font-size: 18px; color: #fff; border-radius: 7px; overflow: hidden; padding-left: 85px; box-sizing: border-box; }
 
@@ -1277,7 +1426,7 @@ input.ui-button::-moz-focus-inner, button.ui-button::-moz-focus-inner { border: 
 
 .join .auth-buttons button:last-child { background: #108ad3 url("../images/ico_mobile.png") 55px center no-repeat; float: right; }
 
-.join .join-success { text-align: center; padding: 100px 0; }
+.join .join-success { text-align: center; padding: 100px 0; font-size: 26px; }
 
 .join .join-buttons { margin-top: 50px; text-align: center; }
 
@@ -1465,10 +1614,56 @@ input.ui-button::-moz-focus-inner, button.ui-button::-moz-focus-inner { border: 
 
 .guide-intro { font-size: 14px; line-height: 200%; background: #e8edf3; padding: 25px 30px; letter-spacing: -0.5px; }
 
-.policy { padding-top: 50px; }
+.policy h4 { font-size: 26px; display: block; text-align: center; line-height: 100%; }
 
-.policy h3 { font-size: 20px; font-weight: 600; line-height: 100%; }
+.policy .txts { margin: 50px 0 0 0; border: 1px solid #ddd; padding: 30px 30px; }
 
-.policy .title { display: block; text-align: center; font-size: 26px; line-height: 100%; padding: 60px 0 40px 0; font-weight: normal; }
+.policy .txts .default { color: #222; font-size: 16px; }
 
-.policy .txts { border: 1px solid #ddd; font-size: 16px; line-height: 200%; padding: 25px 30px; box-sizing: border-box; min-height: 440px; }
+.policy .txts .default span { color: #108ad3; }
+
+.policy .txts .default em { color: #f02011; }
+
+.policy .txts dl { margin: 40px 0 0 0; font-size: 16px; }
+
+.policy .txts dl dt { font-weight: 700; }
+
+.policy .txts dl dt strong { color: #f02011; }
+
+.policy .txts dl dd { margin-top: 5px; }
+
+.policy .txts ol li { font-size: 16px; margin-top: 5px; color: #222; }
+
+.policy .txts ol li:first-child { margin-top: 0; }
+
+.policy .txts ul li { position: relative; font-size: 16px; margin-top: 5px; color: #222; padding-left: 15px; }
+
+.policy .txts ul li:before { content: '·'; color: #222; font-size: 16px; display: inline-block; position: absolute; top: 0; left: 0; }
+
+.policy .txts ul li:first-child { margin-top: 0; }
+
+.policy .txts ul li li:before { content: '-'; }
+
+.sitemap li { margin: 0 18px; width: 170px; display: inline-block; vertical-align: top; }
+
+.sitemap li:first-child { margin-left: 0; }
+
+.sitemap li:last-child { margin-right: 0; }
+
+.sitemap a:hover { color: #108ad3; }
+
+.sitemap dl { margin-bottom: 50px; }
+
+.sitemap dl dt { width: 170px; height: 50px; line-height: 50px; border-radius: 50px; text-align: center; color: #fff; background: #108ad3; font-weight: 700; margin-bottom: 20px; }
+
+.sitemap dl dd { margin: 5px 0 5px 30px; }
+
+.dev-guides { position: relative; }
+
+.dev-guides .top-buttons { position: relative; top: auto; text-align: right; margin-bottom: 10px; }
+
+.version-info { margin-top: 50px; }
+
+.version-info h4 { font-size: 18px; font-weight: 600; display: block; margin-bottom: 20px; }
+
+.highlight { display: inline-block; background: #ffff00; line-height: 100%; padding: 3px; }

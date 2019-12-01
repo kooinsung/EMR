@@ -22,6 +22,11 @@
     font-size: 14px;
     line-height: 40px;
     padding: 0 20px 0 20px;
+    &.short{
+      min-width:50px;
+      width:50px;
+      padding:0;
+    }
   }
   &.modify{
     background:#e8edf3;
@@ -62,4 +67,32 @@
     background:#999;
     color:#fff;
   }
+}
+
+.top-buttons{
+  position:absolute;
+  top:3px;
+  right:0;
+  button{
+    position:relative;
+    font-size:12px;
+    border:1px solid #ddd;
+    background:#f6f6f6;
+    border-radius:2px;
+    height:20px;
+    line-height:18px;
+    vertical-align: top;
+    margin-left:4px;
+    padding:0 5px;
+    box-sizing: border-box;
+    &.download{
+      background: url("#{$imgPath}ico_download.png") 5px center no-repeat;
+      padding-left:20px;
+    }
+    &.print{
+      background: url("#{$imgPath}ico_print.png") 5px center no-repeat;
+      padding-left:20px;
+    }
+  }
+
 }
