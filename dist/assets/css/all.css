@@ -1042,6 +1042,8 @@ input.ui-button::-moz-focus-inner, button.ui-button::-moz-focus-inner { border: 
 
 .terms-result .tb-list tbody td { font-size: 13px; line-height: 130%; }
 
+.update { font-size: 12px; text-align: right; line-height: 100%; margin-top: 10px; }
+
 .auth-result { position: relative; }
 
 .auth-result .auth-result-title { font-size: 18px; margin-bottom: 30px; }
