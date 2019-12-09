@@ -1012,9 +1012,9 @@ input.ui-button::-moz-focus-inner, button.ui-button::-moz-focus-inner { border: 
 
 .community-list .lists { font-size: 0; }
 
-.community-list .lists ul { width: 744px; margin-left: -22px; }
+.community-list .lists ul { width: 824px; margin-left: -22px; }
 
-.community-list .lists li { display: inline-block; vertical-align: top; width: 225px; box-sizing: border-box; border: 1px solid #ddd; text-align: center; margin: 20px 0 0 22px; }
+.community-list .lists li { display: inline-block; vertical-align: top; width: 245px; box-sizing: border-box; border: 1px solid #ddd; text-align: center; margin: 20px 0 0 22px; }
 
 .community-list .lists li:hover { border: 1px solid #108ad3; transition: all .5s; }
 
@@ -1042,7 +1042,7 @@ input.ui-button::-moz-focus-inner, button.ui-button::-moz-focus-inner { border: 
 
 .terms-result .tb-list tbody td { font-size: 13px; line-height: 130%; }
 
-.update { font-size: 12px; text-align: right; line-height: 100%; margin-top: 10px; }
+.update { font-size: 12px; text-align: right; line-height: 100%; margin-bottom: 10px; }
 
 .auth-result { position: relative; }
 
