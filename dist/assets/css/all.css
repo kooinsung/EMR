@@ -226,7 +226,7 @@ select::-ms-expand { display: none; }
 
 .board-search { background: #e8edf3; margin-bottom: 50px; padding: 30px 70px; font-size: 0; }
 
-.board-search .button { height: 40px; line-height: 40px; margin-left: 0; }
+.board-search .button { height: 40px; line-height: 40px; margin-left: 5px; }
 
 .board-search-select { position: relative; display: inline-block; width: 160px; height: 40px; box-sizing: border-box; background: #fff; border: 2px solid #d5d5d5; margin-right: 10px; }
 
@@ -234,9 +234,11 @@ select::-ms-expand { display: none; }
 
 .board-search-select select { position: relative; z-index: 2; font-size: 13px; width: 100%; height: 100%; background: transparent; padding-left: 16px; }
 
-.board-search-input { display: inline-block; vertical-align: top; width: 530px; height: 40px; box-sizing: border-box; background: #fff; border: 2px solid #d5d5d5; margin-right: 10px; }
+.board-search-input { display: inline-block; vertical-align: top; width: 530px; height: 40px; box-sizing: border-box; background: #fff; border: 2px solid #d5d5d5; margin-right: 5px; }
 
 .board-search-input.short { width: 394px; }
+
+.board-search-input.short2 { width: 323px; }
 
 .board-search-input input { font-size: 13px; color: #777; width: 100%; height: 100%; text-indent: 16px; }
 
@@ -1669,3 +1671,5 @@ input.ui-button::-moz-focus-inner, button.ui-button::-moz-focus-inner { border: 
 .version-info h4 { font-size: 18px; font-weight: 600; display: block; margin-bottom: 20px; }
 
 .highlight { display: inline-block; background: #ffff00; line-height: 100%; padding: 3px; }
+
+.popup { margin: 10px; }
