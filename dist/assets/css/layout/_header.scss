@@ -11,8 +11,15 @@
   }
   .logo{
     position:absolute;
-    top:0;
+    top:24px;
     left:0;
+    a{
+      display:block;
+      width:162px;
+      height:33px;
+      background:url('#{$imgPath}img_logo.png') center center no-repeat;
+      text-indent: -9999px;
+    }
   }
   .search{
     position:relative;

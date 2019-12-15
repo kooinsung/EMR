@@ -778,7 +778,9 @@ input.ui-button::-moz-focus-inner, button.ui-button::-moz-focus-inner { border: 
 
 .header .inner { position: relative; width: 1000px; height: 80px; margin: 0 auto; overflow: hidden; padding: 0 10px; }
 
-.header .logo { position: absolute; top: 0; left: 0; }
+.header .logo { position: absolute; top: 24px; left: 0; }
+
+.header .logo a { display: block; width: 162px; height: 33px; background: url("../images/img_logo.png") center center no-repeat; text-indent: -9999px; }
 
 .header .search { position: relative; box-sizing: border-box; width: 300px; height: 40px; border-radius: 50px; border: 4px solid #108ad3; overflow: hidden; margin: 20px 0 0 350px; }
 
