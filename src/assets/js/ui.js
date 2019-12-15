@@ -7,12 +7,6 @@ EMDUI = (function () {
      */
     common: {
       init: function () {
-        $('.owl-carousel').owlCarousel({
-          margin:10,
-          loop:true,
-          autoWidth:true,
-        })
-
         $('.gnb li').each(function(i){
           $(this).mouseenter(function(){
             $(this).addClass('actived');
