@@ -23,8 +23,15 @@
   }
   .logo2{
     position:absolute;
-    top:0;
+    top:33px;
     left:0;
+    a{
+      display:block;
+      width:162px;
+      height:33px;
+      background:url('#{$imgPath}img_logo-white.png') center center no-repeat;
+      text-indent: -9999px;
+    }
   }
   .util-menu{
     margin:0 140px 0 250px;

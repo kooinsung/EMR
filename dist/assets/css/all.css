@@ -852,7 +852,9 @@ input.ui-button::-moz-focus-inner, button.ui-button::-moz-focus-inner { border: 
 
 .footer .infos .inner { position: relative; width: 1000px; margin: 0 auto; }
 
-.footer .logo2 { position: absolute; top: 0; left: 0; }
+.footer .logo2 { position: absolute; top: 33px; left: 0; }
+
+.footer .logo2 a { display: block; width: 162px; height: 33px; background: url("../images/img_logo-white.png") center center no-repeat; text-indent: -9999px; }
 
 .footer .util-menu { margin: 0 140px 0 250px; padding-top: 30px; }
 
