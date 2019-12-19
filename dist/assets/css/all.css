@@ -192,6 +192,43 @@ select::-ms-expand { display: none; }
 @keyframes scaleUpTo { to { opacity: 0;
     transform: scale(1.5); } }
 
+/* Slider */
+.slick-slider { position: relative; display: block; box-sizing: border-box; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; -webkit-touch-callout: none; -khtml-user-select: none; -ms-touch-action: pan-y; touch-action: pan-y; -webkit-tap-highlight-color: transparent; }
+
+.slick-list { position: relative; display: block; overflow: hidden; margin: 0; padding: 0; }
+
+.slick-list:focus { outline: none; }
+
+.slick-list.dragging { cursor: pointer; cursor: hand; }
+
+.slick-slider .slick-track, .slick-slider .slick-list { -webkit-transform: translate3d(0, 0, 0); -moz-transform: translate3d(0, 0, 0); -ms-transform: translate3d(0, 0, 0); -o-transform: translate3d(0, 0, 0); transform: translate3d(0, 0, 0); }
+
+.slick-track { position: relative; top: 0; left: 0; display: block; margin-left: auto; margin-right: auto; }
+
+.slick-track:before, .slick-track:after { display: table; content: ''; }
+
+.slick-track:after { clear: both; }
+
+.slick-loading .slick-track { visibility: hidden; }
+
+.slick-slide { display: none; float: left; height: 100%; min-height: 1px; }
+
+[dir='rtl'] .slick-slide { float: right; }
+
+.slick-slide img { display: block; }
+
+.slick-slide.slick-loading img { display: none; }
+
+.slick-slide.dragging img { pointer-events: none; }
+
+.slick-initialized .slick-slide { display: block; }
+
+.slick-loading .slick-slide { visibility: hidden; }
+
+.slick-vertical .slick-slide { display: block; height: auto; border: 1px solid transparent; }
+
+.slick-arrow.slick-hidden { display: none; }
+
 .button { display: inline-block; min-width: 60px; height: 40px; line-height: 40px; text-align: center; color: #fff; font-size: 14px; font-weight: 700; margin-left: 8px; padding: 0 20px; }
 
 .button.small { width: 100px; height: 40px; line-height: 40px; padding: 0; min-width: auto; margin: 0 4px; }
@@ -844,9 +881,13 @@ input.ui-button::-moz-focus-inner, button.ui-button::-moz-focus-inner { border: 
 
 .footer { overflow: hidden; min-width: 1000px; margin-top: 60px; }
 
-.footer .sites { background: #374b65; height: 90px; }
+.footer .sites { background: #374b65; height: 55px; }
 
 .footer .sites .inner { position: relative; width: 1000px; margin: 0 auto; }
+
+.footer .sites .item { display: inline-block; }
+
+.footer .sites .item a { display: block; color: #fff; text-align: center; font-size: 15px; line-height: 55px; padding: 0 25px; }
 
 .footer .infos { background: #333; overflow: hidden; padding-bottom: 40px; }
 
@@ -902,11 +943,13 @@ input.ui-button::-moz-focus-inner, button.ui-button::-moz-focus-inner { border: 
 
 .visual .visual-carousel .item { height: 480px; }
 
-.visual .owl-pagination { position: absolute; bottom: 106px; left: 50%; font-size: 0; margin-left: -500px; }
+.visual .slick-dots { position: absolute; bottom: 106px; left: 50%; font-size: 0; margin-left: -500px; }
 
-.visual .owl-pagination .owl-page { display: inline-block; width: 12px; height: 12px; border-radius: 12px; background: #fff; margin-right: 10px; }
+.visual .slick-dots li { display: inline-block; margin-right: 10px; }
 
-.visual .owl-pagination .owl-page.active { width: 28px; height: 12px; background: #ffff00; }
+.visual .slick-dots li button { width: 12px; height: 12px; border-radius: 12px; background: #fff; display: inline-block; text-indent: -9999px; }
+
+.visual .slick-dots li.slick-active button { width: 28px; height: 12px; background: #ffff00; }
 
 .fav { background: #eaeef7; }
 
@@ -918,17 +961,13 @@ input.ui-button::-moz-focus-inner, button.ui-button::-moz-focus-inner { border: 
 
 .fav .banners { position: absolute; bottom: 40px; left: 0; width: 240px; height: 86px; box-sizing: border-box; font-size: 0; }
 
-.fav .banners .contorl { font-size: 0; position: absolute; top: 6px; right: 5px; }
+.fav .banners .contorl { display: none; }
 
-.fav .banners .contorl button { display: inline-block; width: 20px; height: 20px; font-size: 0; margin: 0 1px; }
+.fav .banners .slick-arrow { display: inline-block; width: 20px; height: 20px; font-size: 0; margin: 0 1px; z-index: 10; }
 
-.fav .banners .contorl button.prev { background: url("../images/ico_banner-prev.png") center center no-repeat; }
+.fav .banners .slick-arrow.slick-prev { background: url("../images/ico_banner-prev.png") center center no-repeat; position: absolute; top: 6px; right: 28px; }
 
-.fav .banners .contorl button.next { background: url("../images/ico_banner-next.png") center center no-repeat; }
-
-.fav .banners .contorl button.stop { background: url("../images/ico_banner-stop.png") center center no-repeat; }
-
-.fav .banners .contorl button.play { background: url("../images/ico_banner-play.png") center center no-repeat; }
+.fav .banners .slick-arrow.slick-next { background: url("../images/ico_banner-next.png") center center no-repeat; position: absolute; top: 6px; right: 5px; }
 
 .fav .banners a { display: block; width: 240px; height: 86px; }
 

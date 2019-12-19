@@ -4,11 +4,23 @@
   margin-top:60px;
   .sites{
     background:#374b65;
-    height:90px;
+    height:55px;
+
     .inner{
       position:relative;
       width:$width;
       margin:0 auto;
+    }
+    .item{
+      display:inline-block;
+      a{
+        display:block;
+        color:#fff;
+        text-align:center;
+        font-size:15px;
+        line-height:55px;
+        padding:0 25px;
+      }
     }
   }
   .infos{

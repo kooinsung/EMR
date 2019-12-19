@@ -78,31 +78,65 @@ EMDUI = (function () {
           $(this).parent().find('input').datepicker("show");
         });
 
-        var $visualCarousel = $(".visual .visual-carousel");
-        $visualCarousel.owlCarousel({
-          navigation : false,
-          pagination: true,
-          singleItem:true,
-          autoPlay:true,
-          slideSpeed:500,
-          rewindSpeed:500,
-        })
+        // var $visualCarousel = $(".visual .visual-carousel");
+        // $visualCarousel.owlCarousel({
+        //   navigation : false,
+        //   pagination: true,
+        //   singleItem:true,
+        //   autoPlay:true,
+        //   slideSpeed:500,
+        //   rewindSpeed:500,
+        // })
 
-        var $bannerCarousel = $(".banners .banner-carousel");
-        $bannerCarousel.owlCarousel({
-          navigation : false,
-          pagination: false,
-          singleItem:true,
-          autoPlay:true,
-          slideSpeed:500,
-          rewindSpeed:500,
-        })
-        $(".banners .next").click(function(){
-          $bannerCarousel.trigger('owl.next');
+        $('.visual .visual-carousel').slick({
+          draggable: false,
+          arrows:false,
+          dots: true,
         });
-        $(".banners .prev").click(function(){
-          $bannerCarousel.trigger('owl.prev');
+
+
+        // var $siteCarousel = $(".sites .site-carousel");
+        // $siteCarousel.owlCarousel({
+        //   items:5,
+        //   navigation : false,
+        //   pagination: true,
+        //   autoPlay:true,
+        //   slideSpeed:500,
+        //   rewindSpeed:500,
+        // })
+
+        $('.sites .site-carousel').slick({
+
+
+          draggable: false,
+          accessibility: false,
+          centerMode: false,
+          variableWidth: true,
+          slidesToShow: 1,
+          arrows: false,
+          swipeToSlide: true,
+          infinite: true,
+          autoplay: true,
+          autoplaySpeed: 2000,
         });
+
+        // var $bannerCarousel = $(".banners .banner-carousel");
+        // $bannerCarousel.owlCarousel({
+        //   navigation : false,
+        //   pagination: false,
+        //   singleItem:true,
+        //   autoPlay:true,
+        //   slideSpeed:500,
+        //   rewindSpeed:500,
+        // })
+        // $(".banners .next").click(function(){
+        //   $bannerCarousel.trigger('owl.next');
+        // });
+        // $(".banners .prev").click(function(){
+        //   $bannerCarousel.trigger('owl.prev');
+        // });
+
+        $('.banners .banner-carousel').slick({draggable: false,});
       }
     }
   };
