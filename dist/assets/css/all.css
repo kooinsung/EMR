@@ -555,6 +555,20 @@ select::-ms-expand { display: none; }
 
 .person-info dd { display: inline-block; vertical-align: top; font-size: 14px; color: #222; }
 
+.popups { min-width: 460px; position: fixed; z-index: 500; }
+
+.popup-body a { font-size: 0; display: block; vertical-align: top; }
+
+.popup-body img { max-width: 100%; }
+
+.popup-bottom { position: relative; height: 50px; background: #000; }
+
+.popup-bottom .custom-checkbox { margin: 15px 0 0 15px; }
+
+.popup-bottom .custom-checkbox label { color: #fff !important; }
+
+.popup-bottom .close { position: absolute; top: 0; right: 0; width: 50px; height: 50px; font-size: 0; background: url("../images/ico_close.png") center center no-repeat; }
+
 /*! jQuery UI - v1.11.4 - 2019-07-12 http://jqueryui.com Includes: core.css, draggable.css, resizable.css, button.css, datepicker.css, dialog.css Copyright jQuery Foundation and other contributors; Licensed MIT */
 /* Layout helpers
 ----------------------------------*/

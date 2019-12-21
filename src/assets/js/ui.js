@@ -66,7 +66,7 @@ EMDUI = (function () {
 
         $( ".datepicker > input" ).datepicker({
           showOn: "button",
-          buttonImage: "../assets/images/ico_cal.png",
+          buttonImage: "/assets/images/ico_cal.png",
           buttonImageOnly: true,
           beforeShow: function (input, inst) {
             // setTimeout(function(){
