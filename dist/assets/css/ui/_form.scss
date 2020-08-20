@@ -8,6 +8,16 @@
     text-indent: 10px;
     font-size:14px;
   }
+  &.inline{
+    display:inline-block;
+  }
+  &.small{
+    border:1px solid #d5d5d5;
+    input{
+      height:30px;
+      font-size:13px;
+    }
+  }
   &.datepicker{
     .ui-datepicker-trigger{
       position:absolute;
@@ -32,6 +42,17 @@
     width: 35px;
     height: 36px;
     background: url("#{$imgPath}ico_select-arrow.png") right center no-repeat;
+  }
+  &.inline{
+    display:inline-block;
+  }
+  &.small{
+    border:1px solid #d5d5d5;
+    height:30px;
+    &:after {
+      width: 30px;
+      height: 30px;
+    }
   }
   select {
     position: relative;
@@ -73,11 +94,33 @@
 .custom-checkbox{
   display:inline-block;
   margin-right:25px;
+  &.block{
+    display:block;
+    margin-top:8px;
+  }
+  &.etc{
+    input[type=checkbox] {
+      & + label {
+        display:inline-block;
+      }
+    }
+    input[type=text] {
+      position:relative;
+      top:-3px;
+      border:1px solid #d5d5d5;
+      vertical-align: top;
+      margin-left:10px;
+      padding-left:10px;
+      font-size:13px;
+      height:30px;
+    }
+  }
   &:last-child{
     margin-right:0;
   }
-  input{opacity:0;position:absolute;}
+  input{}
   input[type=checkbox] {
+    opacity:0;position:absolute;
     & + label {
       padding-left: 28px;
       height: 21px;
@@ -117,8 +160,8 @@
   &:last-child{
     margin-right:0;
   }
-  input{opacity:0;position:absolute;}
   input[type=radio] {
+    opacity:0;position:absolute;
     & + label {
       padding-left: 28px;
       height: 21px;

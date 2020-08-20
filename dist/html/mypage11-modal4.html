@@ -22,7 +22,7 @@
 <body>
   <header class="header">
     <section class="inner">
-      <h1 class="logo">EMR LOGO</h1>
+      <h1 class="logo"><a href="">EMR LOGO</a></h1>
       <div class="search">
         <input type="text"><button type="button">검색</button>
       </div>
@@ -107,169 +107,163 @@
 
 
   <div class="container">
-    <div class="content">
 
-      <div class="sub-contents">
-        <div class="lnb">
-          <h2 class="depth1">마이페이지</h2>
-          <div class="menus">
+    <div class="sub-contents">
+      <div class="lnb">
+        <h2 class="depth1">마이페이지</h2>
+        <div class="menus">
+          <ul>
+            <li class="depth2">
+              <a href="">기본 정보</a>
+            </li>
+            <li class="depth2">
+              <a href="">그룹 정보</a>
+            </li>
+            <li class="depth2">
+              <a href="" class="actived">그룹 관리</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="content-view">
+        <div class="tops">
+          <h3 class="tit">그룹 관리</h3>
+          <div class="location">
             <ul>
-              <li class="depth2">
-                <a href="">기본 정보</a>
-              </li>
-              <li class="depth2">
-                <a href="">그룹 정보</a>
-              </li>
-              <li class="depth2">
-                <a href="" class="actived">그룹 관리</a>
-              </li>
+              <li class="home"><a href="">home</a></li>
+              <li><a href="">마이페이지</a></li>
+              <li><a href="">그룹 관리</a></li>
             </ul>
           </div>
         </div>
-        <div class="content-view">
-          <div class="tops">
-            <h3 class="tit">그룹 관리</h3>
-            <div class="location">
-              <ul>
-                <li class="home"><a href="">home</a></li>
-                <li><a href="">마이페이지</a></li>
-                <li><a href="">그룹 관리</a></li>
-              </ul>
+
+        <div class="mypage">
+          <div class="tabs">
+            <ul>
+              <li class="actived"><a href="">그룹 신청현황</a></li>
+            </ul>
+          </div>
+          <div class="group-info">
+            <div class="tb-list">
+              <table>
+                <colgroup>
+                  <col>
+                  <col>
+                  <col>
+                  <col style="width:220px;">
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th>ID</th>
+                    <th>이름</th>
+                    <th>이메일</th>
+                    <th>가입 내용 및 승인</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>abc2334</td>
+                    <td>김*균</td>
+                    <td>A**@a**.com</td>
+                    <td>
+                      <button type="button" class="status short type3">내용</button>
+                      <button type="button" class="status short type2">승인</button>
+                      <button type="button" class="status short type1">반려</button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
           </div>
-
-          <div class="mypage">
-            <div class="tabs">
-              <ul>
-                <li class="actived"><a href="">그룹 신청현황</a></li>
-              </ul>
-            </div>
-            <div class="group-info">
-              <div class="tb-list">
-                <table>
-                  <colgroup>
-                    <col>
-                    <col>
-                    <col>
-                    <col style="width:220px;">
-                  </colgroup>
-                  <thead>
-                    <tr>
-                      <th>ID</th>
-                      <th>이름</th>
-                      <th>이메일</th>
-                      <th>가입 내용 및 승인</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>abc2334</td>
-                      <td>김*균</td>
-                      <td>A**@a**.com</td>
-                      <td>
-                        <button type="button" class="status short type3">내용</button>
-                        <button type="button" class="status short type2">승인</button>
-                        <button type="button" class="status short type1">반려</button>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-            <div class="tabs">
-              <ul>
-                <li class="actived"><a href="">그룹 인원관리</a></li>
-              </ul>
-            </div>
-            <div class="group-info">
-              <div class="tb-list">
-                <table>
-                  <colgroup>
-                    <col>
-                    <col>
-                    <col>
-                    <col style="width:220px;">
-                  </colgroup>
-                  <thead>
-                    <tr>
-                      <th>ID</th>
-                      <th>이름</th>
-                      <th>이메일</th>
-                      <th>상태 변경</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>abc2334</td>
-                      <td>김*균</td>
-                      <td>A**@a**.com</td>
-                      <td class="radios">
-                        <span class="custom-radio">
-                          <input type="radio" id="s1">
-                          <label for="s1">승인</label>
-                        </span>
-                        <span class="custom-radio">
-                          <input type="radio" id="s2">
-                          <label for="s2">반려</label>
-                        </span>
-                        <span class="custom-radio">
-                          <input type="radio" id="s3">
-                          <label for="s3">탈퇴</label>
-                        </span>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
+          <div class="tabs">
+            <ul>
+              <li class="actived"><a href="">그룹 인원관리</a></li>
+            </ul>
+          </div>
+          <div class="group-info">
+            <div class="tb-list">
+              <table>
+                <colgroup>
+                  <col>
+                  <col>
+                  <col>
+                  <col style="width:220px;">
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th>ID</th>
+                    <th>이름</th>
+                    <th>이메일</th>
+                    <th>상태 변경</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>abc2334</td>
+                    <td>김*균</td>
+                    <td>A**@a**.com</td>
+                    <td class="radios">
+                      <span class="custom-radio">
+                        <input type="radio" id="s1">
+                        <label for="s1">승인</label>
+                      </span>
+                      <span class="custom-radio">
+                        <input type="radio" id="s2">
+                        <label for="s2">반려</label>
+                      </span>
+                      <span class="custom-radio">
+                        <input type="radio" id="s3">
+                        <label for="s3">탈퇴</label>
+                      </span>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
           </div>
         </div>
       </div>
-
     </div>
+
   </div>
 
   <footer class="footer">
     <section class="sites">
       <div class="inner">
-        <!--<div class="site-carousel">-->
-        <!--<div class="item" ><a href="">공익신고</a></div>-->
-        <!--<div class="item" ><a href="">e-나라지표</a></div>-->
-        <!--<div class="item" ><a href="">자살예방상담전화 1393</a></div>-->
-        <!--<div class="item" ><a href="">안전신문고</a></div>-->
-        <!--<div class="item" ><a href="">국민건강보험</a></div>-->
-        <!--<div class="item" ><a href="">성범죄자 알림e</a></div>-->
-        <!--<div class="item" ><a href="">한국양성평등교육진흥원</a></div>-->
-        <!--<div class="item" ><a href="">공익신고</a></div>-->
-        <!--<div class="item" ><a href="">e-나라지표</a></div>-->
-        <!--<div class="item" ><a href="">자살예방상담전화 1393</a></div>-->
-        <!--<div class="item" ><a href="">안전신문고</a></div>-->
-        <!--<div class="item" ><a href="">국민건강보험</a></div>-->
-        <!--<div class="item" ><a href="">성범죄자 알림e</a></div>-->
-        <!--<div class="item" ><a href="">한국양성평등교육진흥원</a></div-->
-        <!--</div>-->
-      </div>
-    </section>
-    <section class="infos">
-      <div class="inner">
-        <strong class="logo2">EMR LOGO</strong>
-        <div class="util-menu">
-          <ul>
-            <li><a href="">개인정보처리방침</a></li>
-            <li><a href="">이용약관</a></li>
-            <li><a href="">이메일주소 무단수집거부</a></li>
-            <li><a href="">자주 묻는 질문</a></li>
-          </ul>
-        </div>
-        <strong class="logo3"><a href=""><img src="../assets/images/img_logo3.png" alt="보건복지부"></a></strong>
-        <div class="info-text">
-          <address>
-            30113) 세종특별자치시 도움4로 13 보건복지부 (정부세종청사 10동)<br>
-            안내전화 : 보건복지상담센터 129 / 당직실(공휴일, 야간) : 044-202-2118 / FAX : 044-202-3910
-          </address>
-          <p class="copyright">COPYRIGHT ⓒ By MOHW. All rights Reserved</p>
-        </div>
-      </div>
+        <div class="site-carousel">
+          <div class="item"><a href="">공익신고</a></div>
+          <div class="item"><a href="">e-나라지표</a></div>
+          <div class="item"><a href="">자살예방상담전화 1393</a></div>
+          <div class="item"><a href="">안전신문고</a></div>
+          <div class="item"><a href="">국민건강보험</a></div>
+          <div class="item"><a href="">성범죄자 알림e</a></div>
+          <div class="item"><a href="">한국양성평등교육진흥원</a></div>
+          <div class="item"><a href="">공익신고</a></div>
+          <div class="item"><a href="">e-나라지표</a></div>
+          <div class="item"><a href="">자살예방상담전화 1393</a></div>
+          <div class="item"><a href="">안전신문고</a></div>
+          <div class="item"><a href="">국민건강보험</a></div>
+          <div class="item"><a href="">성범죄자 알림e</a></div>
+          <div class="item"><a href="">한국양성평등교육진흥원</a></div </div> </div> </section> <section class="infos">
+          <div class="inner">
+            <strong class="logo2"><a href="">EMR LOGO</a></strong>
+            <div class="util-menu">
+              <ul>
+                <li><a href="">개인정보처리방침</a></li>
+                <li><a href="">이용약관</a></li>
+                <li><a href="">이메일주소 무단수집거부</a></li>
+                <li><a href="">자주 묻는 질문</a></li>
+              </ul>
+            </div>
+            <strong class="logo3"><a href=""><img src="../assets/images/img_logo3.png" alt="보건복지부"></a></strong>
+            <div class="info-text">
+              <address>
+                30113) 세종특별자치시 도움4로 13 보건복지부 (정부세종청사 10동)<br>
+                안내전화 : 보건복지상담센터 129 / 당직실(공휴일, 야간) : 044-202-2118 / FAX : 044-202-3910
+              </address>
+              <p class="copyright">COPYRIGHT ⓒ By MOHW. All rights Reserved</p>
+            </div>
+          </div>
     </section>
   </footer>
 
@@ -310,6 +304,9 @@
       </div>
     </div>
   </div>
+
+
+
 
 </body>
 

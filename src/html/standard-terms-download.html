@@ -1,0 +1,355 @@
+<!-- @@master ../include/layout.html -->
+<!-- @@block content -->
+<div class="sub-contents">
+  <div class="lnb">
+    <h2 class="depth1">표준용어</h2>
+    <div class="menus">
+      <ul>
+        <li class="depth2">
+          <a href="">표준용어 소개</a>
+        </li>
+        <li class="depth2">
+          <a href="" class="actived">표준용어 조회</a>
+        </li>
+        <li class="depth2">
+          <a href="">표준용어 자료실</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="content-view">
+    <div class="tops">
+      <h3 class="tit">표준용어 조회</h3>
+      <div class="location">
+        <ul>
+          <li class="home"><a href="">home</a></li>
+          <li><a href="">표준용어</a></li>
+          <li><a href="">표준용어 조회</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="tb-view2">
+      <table>
+        <colgroup>
+          <col style="width:80px;">
+          <col>
+        </colgroup>
+        <tbody>
+        <tr>
+          <th>분야</th>
+          <td colspan="5">
+            <div class="checkbox-group">
+              <span class="custom-checkbox">
+                <input type="checkbox" id="dv1">
+                <label for="dv1">진단</label>
+              </span>
+              <span class="custom-checkbox">
+                <input type="checkbox" id="dv2">
+                <label for="dv2">의약품</label>
+              </span>
+              <span class="custom-checkbox">
+                <input type="checkbox" id="dv3">
+                <label for="dv3">검사</label>
+              </span>
+              <span class="custom-checkbox">
+                <input type="checkbox" id="dv4">
+                <label for="dv4">처치 및 시술</label>
+              </span>
+              <span class="custom-checkbox">
+                <input type="checkbox" id="dv5">
+                <label for="dv5">기타</label>
+              </span>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <th>검색어</th>
+          <td colspan="5" class="keyword">
+            <span class="custom-input"><input type="text" value="실신"></span>
+          </td>
+        </tr>
+        <tr>
+          <th>검색필터</th>
+          <td colspan="5">
+            <div class="checkbox-group">
+              <span class="custom-checkbox">
+                <input type="checkbox" id="dv6">
+                <label for="dv6">유사어/동의어 포함</label>
+              </span>
+              <span class="custom-checkbox">
+                <input type="checkbox" id="dv7">
+                <label for="dv7">관련 국제표준용어체계 포함</label>
+              </span>
+              <span class="custom-checkbox">
+                <input type="checkbox" id="dv8">
+                <label for="dv8">SNOMED CT 선조합 개념만 표시</label>
+              </span>
+            </div>
+          </td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="tb-buttons right">
+      <a href="" class="button default">조회</a>
+    </div>
+
+    <div class="terms-result">
+      <strong class="terms-result-title">검색결과</strong>
+      <div class="top-buttons">
+        <button type="button" class="download">엑셀 다운로드</button><button type="button" class="print">출력</button>
+      </div>
+      <div class="tb-list scroll">
+        <table>
+          <thead>
+          <tr>
+            <th rowspan="2">KCD<br>코드</th>
+            <th rowspan="2">KCD 한글명</th>
+            <th rowspan="2">한글명 유사어</th>
+            <th rowspan="2">KCD 영문명</th>
+            <th rowspan="2">영문명 유사어</th>
+            <th rowspan="2">ICD<br>코드</th>
+            <th rowspan="2">ICD 영문명</th>
+            <th colspan="3">Core concept</th>
+            <th colspan="3">Core concept</th>
+            <th colspan="3">Attribute</th>
+            <th colspan="3">Value</th>
+            <th rowspan="2">SNOMED CT Expression</th>
+          </tr>
+          <tr>
+            <th>SCTID</th>
+            <th>Concept name</th>
+            <th>axis</th>
+            <th>SCTID</th>
+            <th>Concept name</th>
+            <th>axis</th>
+            <th>SCTID</th>
+            <th>Concept name</th>
+            <th>axis</th>
+            <th>SCTID</th>
+            <th>Concept name</th>
+            <th>axis</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td rowspan="4">R558</td>
+            <td rowspan="4">기타 실신 및 허탈</td>
+            <td>일실적 의식상실</td>
+            <td rowspan="4">Other syncope and collapse</td>
+            <td>blackout</td>
+            <td rowspan="4">R55</td>
+            <td rowspan="4">syncope and collapse</td>
+            <td rowspan="4">309585006</td>
+            <td rowspan="4">Syncope and collapse</td>
+            <td rowspan="4">disorder</td>
+            <td rowspan="4"></td>
+            <td rowspan="4"></td>
+            <td rowspan="4"></td>
+            <td rowspan="4"></td>
+            <td rowspan="4"></td>
+            <td rowspan="4"></td>
+            <td rowspan="4"></td>
+            <td rowspan="4"></td>
+            <td rowspan="4"></td>
+            <td rowspan="4">309585006 | Syncope and collapse (disorder)</td>
+          </tr>
+          <tr>
+            <td>실신</td>
+            <td>Fainting</td>
+           </tr>
+          <tr>
+            <td>퀄증</td>
+            <td>Syncope</td>
+          </tr>
+          <tr>
+            <td>실궐</td>
+            <td>Crapulent syncope</td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="update">최근 업데이트 : 2019.12.02 </div>
+    </div>
+
+    <div class="paging">
+      <a href="" class="control first">first</a>
+      <a href="" class="control prev">prev</a>
+      <ul>
+        <li class="num actived"><a href="">1</a></li>
+        <li class="num"><a href="">2</a></li>
+        <li class="num"><a href="">3</a></li>
+        <li class="num"><a href="">4</a></li>
+        <li class="num"><a href="">5</a></li>
+      </ul>
+      <a href="" class="control next">next</a>
+      <a href="" class="control last">last</a>
+    </div>
+  </div>
+</div>
+<!-- @@close -->
+
+<!-- @@block  =  modal-->
+<div class="modal big">
+  <div class="modal-inner">
+    <div class="modal-title">
+      <strong>EMR 프레임워크 표준용어 다운로드</strong>
+      <button type="button" class="close">close</button>
+    </div>
+    <div class="modal-body">
+      <div class="policy-box">
+        <div class="txts">
+          asdf
+        </div>
+        <div class="solo-check-group">
+          <span class="solo-check inline">
+            <input type="checkbox" id="policy-check1">
+            <label for="policy-check1">동의합니다.</label>
+          </span>
+          <span class="solo-check inline">
+            <input type="checkbox" id="policy-check2">
+            <label for="policy-check2">동의하지 않습니다.</label>
+          </span>
+        </div>
+      </div>
+
+      <br /><br />
+
+      <div class="modal-row">
+        <div class="modal-col inline">
+          <div class="modal-col-inner">
+            <strong class="modal-col-title">국가 보건의료 정보회사업 참여여부 (복수선택 가능)</strong>
+            <div class="modal-col-contents">
+              <div class="checkbox-group">
+                <span class="custom-checkbox block">
+                  <input type="checkbox" id="mc1-1">
+                  <label for="mc1-1">없음</label>
+                </span>
+                <span class="custom-checkbox block">
+                  <input type="checkbox" id="mc1-2">
+                  <label for="mc1-2">의료데이터 중심병원 지원사업</label>
+                </span>
+                <span class="custom-checkbox block">
+                  <input type="checkbox" id="mc1-3">
+                  <label for="mc1-3">전자의무기록시스템 인증제</label>
+                </span>
+                <span class="custom-checkbox block">
+                  <input type="checkbox" id="mc1-4">
+                  <label for="mc1-4">진료정보교류사업</label>
+                </span>
+                <span class="custom-checkbox block etc">
+                  <input type="checkbox" id="mc1-5">
+                  <label for="mc1-5">기타</label>
+                  <input type="text" placeholder="입력하세요."  style="width:260px;">
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-col inline">
+          <div class="modal-col-inner">
+            <strong class="modal-col-title">목적 (복수선택 가능)</strong>
+            <div class="modal-col-contents">
+              <div class="checkbox-group">
+                <span class="custom-checkbox block">
+                  <input type="checkbox" id="mc2-1">
+                  <label for="mc2-1">전자의무기록시스템 적용</label>
+                </span>
+                <span class="custom-checkbox block">
+                  <input type="checkbox" id="mc2-2">
+                  <label for="mc2-1">용어체계 구축</label>
+                </span>
+                <span class="custom-checkbox block">
+                  <input type="checkbox" id="mc2-3">
+                  <label for="mc2-3">공통데이터모델(CMD) 매핑</label>
+                </span>
+                <span class="custom-checkbox block">
+                  <input type="checkbox" id="mc2-4">
+                  <label for="mc2-4">학술연구</label>
+                </span>
+                <span class="custom-checkbox block">
+                  <input type="checkbox" id="mc2-5">
+                  <label for="mc2-5">교육용</label>
+                </span>
+                <span class="custom-checkbox block etc">
+                  <input type="checkbox" id="mc2-6">
+                  <label for="mc2-6">기타</label>
+                  <input type="text" placeholder="입력하세요."  style="width:260px;">
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-row">
+        <div class="modal-col">
+          <div class="modal-col-inner">
+            <strong class="modal-col-title">인적사항</strong>
+            <div class="modal-col-contents">
+              <table>
+                <colgroup>
+                  <col style="width:60px" />
+                  <col />
+                </colgroup>
+                <tbody>
+                <tr>
+                  <th>이름</th>
+                  <td>
+                    <span class="custom-input small inline" style="width:180px;"><input type="text" placeholder="입력하세요."></span>
+                  </td>
+                </tr>
+                <tr>
+                  <th>전화번호</th>
+                  <td>
+                    <span class="custom-input small inline" style="width:180px;"><input type="text" placeholder="입력하세요."></span>
+                    <em class="tip">하이픈 ‘-’없이 입력, 예)01012341234</em>
+                  </td>
+                </tr>
+                <tr>
+                  <th>이메일</th>
+                  <td>
+                    <span class="custom-input small inline" style="width:180px;"><input type="text" placeholder="입력하세요."></span>
+                    <em class="mail-icon">@</em>
+                    <span class="custom-select small inline" style="width:180px;">
+                      <select name="" id="">
+                        <option value="">입력하세요.</option>
+                      </select>
+                    </span>
+                  </td>
+                </tr>
+                <tr>
+                  <th>직업군</th>
+                  <td>
+                    <span class="custom-select small inline" style="width:180px;">
+                      <select name="" id="">
+                        <option value="">입력하세요.</option>
+                      </select>
+                    </span>
+                  </td>
+                </tr>
+                <tr>
+                  <th>소속</th>
+                  <td>
+                    <span class="custom-select small inline" style="width:180px;">
+                      <select name="" id="">
+                        <option value="">입력하세요.</option>
+                      </select>
+                    </span>
+                    <span class="custom-input small inline" style="width:180px;"><input type="text" placeholder="기관명"></span>
+                  </td>
+                </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal-button">
+      <button type="button" class="button small default">확인</button>
+      <button type="button" class="button small cancel">취소</button>
+    </div>
+  </div>
+</div>
+<!-- @@close-->

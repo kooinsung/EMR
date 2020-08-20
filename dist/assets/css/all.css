@@ -481,11 +481,23 @@ select::-ms-expand { display: none; }
 
 .custom-input input { width: 100%; height: 36px; text-indent: 10px; font-size: 14px; }
 
+.custom-input.inline { display: inline-block; }
+
+.custom-input.small { border: 1px solid #d5d5d5; }
+
+.custom-input.small input { height: 30px; font-size: 13px; }
+
 .custom-input.datepicker .ui-datepicker-trigger { position: absolute; top: 11px; right: 12px; }
 
 .custom-select { position: relative; display: block; border: 2px solid #d5d5d5; height: 36px; background: #fff; }
 
 .custom-select:after { content: ""; position: absolute; top: 0; right: 0; z-index: 1; width: 35px; height: 36px; background: url("../images/ico_select-arrow.png") right center no-repeat; }
+
+.custom-select.inline { display: inline-block; }
+
+.custom-select.small { border: 1px solid #d5d5d5; height: 30px; }
+
+.custom-select.small:after { width: 30px; height: 30px; }
 
 .custom-select select { position: relative; z-index: 2; font-size: 13px; width: 100%; height: 100%; background: transparent; padding-left: 16px; }
 
@@ -503,9 +515,15 @@ select::-ms-expand { display: none; }
 
 .custom-checkbox { display: inline-block; margin-right: 25px; }
 
+.custom-checkbox.block { display: block; margin-top: 8px; }
+
+.custom-checkbox.etc input[type=checkbox] + label { display: inline-block; }
+
+.custom-checkbox.etc input[type=text] { position: relative; top: -3px; border: 1px solid #d5d5d5; vertical-align: top; margin-left: 10px; padding-left: 10px; font-size: 13px; height: 30px; }
+
 .custom-checkbox:last-child { margin-right: 0; }
 
-.custom-checkbox input { opacity: 0; position: absolute; }
+.custom-checkbox input[type=checkbox] { opacity: 0; position: absolute; }
 
 .custom-checkbox input[type=checkbox] + label { padding-left: 28px; height: 21px; line-height: 21px; color: #222; font-size: 14px; cursor: pointer; display: block; position: relative; }
 
@@ -517,7 +535,7 @@ select::-ms-expand { display: none; }
 
 .custom-radio:last-child { margin-right: 0; }
 
-.custom-radio input { opacity: 0; position: absolute; }
+.custom-radio input[type=radio] { opacity: 0; position: absolute; }
 
 .custom-radio input[type=radio] + label { padding-left: 28px; height: 21px; line-height: 21px; color: #222; font-size: 14px; cursor: pointer; display: block; position: relative; }
 
@@ -554,6 +572,34 @@ select::-ms-expand { display: none; }
 .person-info dt { display: inline-block; vertical-align: top; font-size: 14px; font-weight: 500; }
 
 .person-info dd { display: inline-block; vertical-align: top; font-size: 14px; color: #222; }
+
+.modal-row { position: relative; font-size: 0; margin-bottom: 20px; }
+
+.modal-row:last-child { margin-bottom: 0; }
+
+.modal-col { vertical-align: top; }
+
+.modal-col.inline { display: inline-block; width: 50%; }
+
+.modal-col.inline:first-child .modal-col-inner { margin-right: 10px; }
+
+.modal-col.inline:last-child .modal-col-inner { margin-left: 10px; }
+
+.modal-col-title { display: block; font-size: 14px; margin-bottom: 15px; }
+
+.modal-col-inner { border: 1px solid #ddd; box-sizing: border-box; min-height: 257px; padding: 20px; }
+
+.modal-col-contents table { width: 100%; }
+
+.modal-col-contents tbody th { text-align: left; font-size: 14px; }
+
+.modal-col-contents tbody td { padding: 4px 0; font-size: 0; }
+
+.modal-col-contents tbody td .custom-input, .modal-col-contents tbody td .custom-select { margin-right: 8px; }
+
+.modal-col-contents tbody td .tip { vertical-align: top; font-size: 13px; display: inline-block; line-height: 30px; }
+
+.modal-col-contents tbody td .mail-icon { vertical-align: top; font-size: 13px; margin-right: 5px; line-height: 30px; }
 
 .popups { min-width: 460px; position: fixed; z-index: 500; }
 
@@ -1425,18 +1471,6 @@ input.ui-button::-moz-focus-inner, button.ui-button::-moz-focus-inner { border: 
 
 .join .policy-box .title { display: block; font-size: 16px; font-weight: 700; margin-bottom: 5px; }
 
-.join .policy-box .txts { height: 200px; border: 1px solid #ddd; font-size: 14px; line-height: 150%; padding: 15px; overflow-y: auto; }
-
-.join .solo-check { display: block; margin-top: 7px; }
-
-.join .solo-check input { opacity: 0; position: absolute; }
-
-.join .solo-check input[type=checkbox] + label { padding-left: 34px; font-size: 14px; cursor: pointer; display: block; position: relative; line-height: 24px; }
-
-.join .solo-check input[type=checkbox] + label:before { content: ''; position: absolute; top: 0px; left: 0; width: 24px; height: 24px; background: url("../images/ico_circle-check-off.png") center center no-repeat; box-sizing: border-box; }
-
-.join .solo-check input[type=checkbox]:checked + label:before { background: url("../images/ico_circle-check-on.png") center center no-repeat; }
-
 .join .join-input { position: relative; }
 
 .join .join-input label { display: block; font-size: 16px; font-weight: 700; line-height: 100%; margin-bottom: 10px; }
@@ -1492,6 +1526,24 @@ input.ui-button::-moz-focus-inner, button.ui-button::-moz-focus-inner { border: 
 .join .join-buttons { margin-top: 50px; text-align: center; }
 
 .join .join-buttons .button { margin: 0 4px; height: 40px; line-height: 40px; }
+
+.policy-box .txts { height: 200px; border: 1px solid #ddd; font-size: 14px; line-height: 150%; padding: 15px; overflow-y: auto; }
+
+.solo-check-group { text-align: right; }
+
+.solo-check-group .solo-check { margin-left: 20px; }
+
+.solo-check { display: block; margin-top: 7px; }
+
+.solo-check.inline { display: inline-block; }
+
+.solo-check input { opacity: 0; position: absolute; }
+
+.solo-check input[type=checkbox] + label { padding-left: 34px; font-size: 14px; cursor: pointer; display: block; position: relative; line-height: 24px; }
+
+.solo-check input[type=checkbox] + label:before { content: ''; position: absolute; top: 0px; left: 0; width: 24px; height: 24px; background: url("../images/ico_circle-check-off.png") center center no-repeat; box-sizing: border-box; }
+
+.solo-check input[type=checkbox]:checked + label:before { background: url("../images/ico_circle-check-on.png") center center no-repeat; }
 
 .mypage { font-size: 0; }
 

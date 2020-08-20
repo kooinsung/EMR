@@ -1478,47 +1478,6 @@
       font-weight:700;
       margin-bottom:5px;
     }
-    .txts{
-      height:200px;
-      border:1px solid #ddd;
-      font-size:14px;
-      line-height:150%;
-      padding:15px;
-      overflow-y:auto;
-    }
-  }
-  .solo-check{
-    display:block;
-    margin-top:7px;
-    input{opacity:0;position:absolute;}
-    input[type=checkbox] {
-      & + label {
-        padding-left: 34px;
-        font-size: 14px;
-        cursor: pointer;
-        display: block;
-        position: relative;
-        line-height:24px;
-        &:before{
-          content:'';
-          position:absolute;
-          top:0px;
-          left:0;
-          width:24px;
-          height:24px;
-          background: url("#{$imgPath}ico_circle-check-off.png") center center no-repeat;
-          box-sizing: border-box;
-        }
-      }
-
-      &:checked {
-        & + label {
-          &:before{
-            background: url("#{$imgPath}ico_circle-check-on.png") center center no-repeat;
-          }
-        }
-      }
-    }
   }
   .join-input{
     position:relative;
@@ -1673,6 +1632,58 @@
   }
 }
 
+.policy-box{
+  .txts{
+    height:200px;
+    border:1px solid #ddd;
+    font-size:14px;
+    line-height:150%;
+    padding:15px;
+    overflow-y:auto;
+  }
+}
+.solo-check-group{
+  text-align:right;
+  .solo-check{
+    margin-left:20px;
+  }
+}
+.solo-check{
+  display:block;
+  margin-top:7px;
+  &.inline{
+    display:inline-block;
+  }
+  input{opacity:0;position:absolute;}
+  input[type=checkbox] {
+    & + label {
+      padding-left: 34px;
+      font-size: 14px;
+      cursor: pointer;
+      display: block;
+      position: relative;
+      line-height:24px;
+      &:before{
+        content:'';
+        position:absolute;
+        top:0px;
+        left:0;
+        width:24px;
+        height:24px;
+        background: url("#{$imgPath}ico_circle-check-off.png") center center no-repeat;
+        box-sizing: border-box;
+      }
+    }
+
+    &:checked {
+      & + label {
+        &:before{
+          background: url("#{$imgPath}ico_circle-check-on.png") center center no-repeat;
+        }
+      }
+    }
+  }
+}
 .mypage {
   font-size: 0;
 

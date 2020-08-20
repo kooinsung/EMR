@@ -22,7 +22,7 @@
 <body>
   <header class="header">
     <section class="inner">
-      <h1 class="logo">EMR LOGO</h1>
+      <h1 class="logo"><a href="">EMR LOGO</a></h1>
       <div class="search">
         <input type="text"><button type="button">검색</button>
       </div>
@@ -107,165 +107,159 @@
 
 
   <div class="container">
-    <div class="content">
 
-      <div class="sub-contents">
-        <div class="lnb">
-          <h2 class="depth1">마이페이지</h2>
-          <div class="menus">
+    <div class="sub-contents">
+      <div class="lnb">
+        <h2 class="depth1">마이페이지</h2>
+        <div class="menus">
+          <ul>
+            <li class="depth2">
+              <a href="" class="actived">기본 정보</a>
+            </li>
+            <li class="depth2">
+              <a href="">그룹 정보</a>
+            </li>
+            <li class="depth2">
+              <a href="">그룹 관리</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="content-view">
+        <div class="tops">
+          <h3 class="tit">기본 정보</h3>
+          <div class="location">
             <ul>
-              <li class="depth2">
-                <a href="" class="actived">기본 정보</a>
-              </li>
-              <li class="depth2">
-                <a href="">그룹 정보</a>
-              </li>
-              <li class="depth2">
-                <a href="">그룹 관리</a>
-              </li>
+              <li class="home"><a href="">home</a></li>
+              <li><a href="">마이페이지</a></li>
+              <li><a href="">기본 정보</a></li>
             </ul>
           </div>
         </div>
-        <div class="content-view">
-          <div class="tops">
-            <h3 class="tit">기본 정보</h3>
-            <div class="location">
-              <ul>
-                <li class="home"><a href="">home</a></li>
-                <li><a href="">마이페이지</a></li>
-                <li><a href="">기본 정보</a></li>
-              </ul>
-            </div>
-          </div>
 
-          <div class="mypage">
-            <div class="tabs">
+        <div class="mypage">
+          <div class="tabs">
+            <ul>
+              <li><a href="">내 정보</a></li>
+              <li class="actived"><a href="">쪽지관리</a></li>
+            </ul>
+          </div>
+          <div class="tabs-small">
+            <ul>
+              <li class="actived"><a href="">받은 쪽지함</a></li>
+              <li><a href="">보낸 쪽지함</a></li>
+            </ul>
+          </div>
+          <div class="note-search-form">
+            <label for="">보낸날짜</label>
+            <div class="picker">
+              <span class="custom-input datepicker"><input type="text"></span>
+              <em class="bar">~</em>
+              <span class="custom-input datepicker"><input type="text"></span>
+            </div>
+            <span class="custom-select">
+              <select name="" id="">
+                <option value="">선택하세요</option>
+              </select>
+            </span>
+            <span class="custom-input"><input type="text"></span>
+            <a href="" class="button default">조회</a>
+            <a href="" class="button default">삭제</a>
+          </div>
+          <div class="note-box">
+            <div class="tb-list">
+              <table>
+                <colgroup>
+                  <col style="width:75px;">
+                  <col>
+                  <col style="width:80px;">
+                  <col style="width:160px;">
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th>
+                      <span class="custom-checkbox">
+                        <input type="checkbox" id="all">
+                        <label for="all">순번</label>
+                      </span>
+                    </th>
+                    <th>제목</th>
+                    <th>보낸사람</th>
+                    <th>보낸시각</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="check-number">
+                      <span class="custom-checkbox solo">
+                        <input type="checkbox" id="n1">
+                        <label for="n1">1</label>
+                      </span>
+                    </td>
+                    <td class="tit"><a href="">제목을 입력하세요</a></td>
+                    <td>웹마스터</td>
+                    <td>2019-10-14</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="paging">
+              <a href="" class="control first">first</a>
+              <a href="" class="control prev">prev</a>
               <ul>
-                <li><a href="">내 정보</a></li>
-                <li class="actived"><a href="">쪽지관리</a></li>
+                <li class="num actived"><a href="">1</a></li>
+                <li class="num"><a href="">2</a></li>
+                <li class="num"><a href="">3</a></li>
+                <li class="num"><a href="">4</a></li>
+                <li class="num"><a href="">5</a></li>
               </ul>
-            </div>
-            <div class="tabs-small">
-              <ul>
-                <li class="actived"><a href="">받은 쪽지함</a></li>
-                <li><a href="">보낸 쪽지함</a></li>
-              </ul>
-            </div>
-            <div class="note-search-form">
-              <label for="">보낸날짜</label>
-              <div class="picker">
-                <span class="custom-input datepicker"><input type="text"></span>
-                <em class="bar">~</em>
-                <span class="custom-input datepicker"><input type="text"></span>
-              </div>
-              <span class="custom-select">
-                <select name="" id="">
-                  <option value="">선택하세요</option>
-                </select>
-              </span>
-              <span class="custom-input"><input type="text"></span>
-              <a href="" class="button default">조회</a>
-              <a href="" class="button default">삭제</a>
-            </div>
-            <div class="note-box">
-              <div class="tb-list">
-                <table>
-                  <colgroup>
-                    <col style="width:75px;">
-                    <col>
-                    <col style="width:80px;">
-                    <col style="width:160px;">
-                  </colgroup>
-                  <thead>
-                    <tr>
-                      <th>
-                        <span class="custom-checkbox">
-                          <input type="checkbox" id="all">
-                          <label for="all">순번</label>
-                        </span>
-                      </th>
-                      <th>제목</th>
-                      <th>보낸사람</th>
-                      <th>보낸시각</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td class="check-number">
-                        <span class="custom-checkbox solo">
-                          <input type="checkbox" id="n1">
-                          <label for="n1">1</label>
-                        </span>
-                      </td>
-                      <td class="tit"><a href="">제목을 입력하세요</a></td>
-                      <td>웹마스터</td>
-                      <td>2019-10-14</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-              <div class="paging">
-                <a href="" class="control first">first</a>
-                <a href="" class="control prev">prev</a>
-                <ul>
-                  <li class="num actived"><a href="">1</a></li>
-                  <li class="num"><a href="">2</a></li>
-                  <li class="num"><a href="">3</a></li>
-                  <li class="num"><a href="">4</a></li>
-                  <li class="num"><a href="">5</a></li>
-                </ul>
-                <a href="" class="control next">next</a>
-                <a href="" class="control last">last</a>
-              </div>
+              <a href="" class="control next">next</a>
+              <a href="" class="control last">last</a>
             </div>
           </div>
         </div>
       </div>
-
     </div>
+
   </div>
 
   <footer class="footer">
     <section class="sites">
       <div class="inner">
-        <!--<div class="site-carousel">-->
-        <!--<div class="item" ><a href="">공익신고</a></div>-->
-        <!--<div class="item" ><a href="">e-나라지표</a></div>-->
-        <!--<div class="item" ><a href="">자살예방상담전화 1393</a></div>-->
-        <!--<div class="item" ><a href="">안전신문고</a></div>-->
-        <!--<div class="item" ><a href="">국민건강보험</a></div>-->
-        <!--<div class="item" ><a href="">성범죄자 알림e</a></div>-->
-        <!--<div class="item" ><a href="">한국양성평등교육진흥원</a></div>-->
-        <!--<div class="item" ><a href="">공익신고</a></div>-->
-        <!--<div class="item" ><a href="">e-나라지표</a></div>-->
-        <!--<div class="item" ><a href="">자살예방상담전화 1393</a></div>-->
-        <!--<div class="item" ><a href="">안전신문고</a></div>-->
-        <!--<div class="item" ><a href="">국민건강보험</a></div>-->
-        <!--<div class="item" ><a href="">성범죄자 알림e</a></div>-->
-        <!--<div class="item" ><a href="">한국양성평등교육진흥원</a></div-->
-        <!--</div>-->
-      </div>
-    </section>
-    <section class="infos">
-      <div class="inner">
-        <strong class="logo2">EMR LOGO</strong>
-        <div class="util-menu">
-          <ul>
-            <li><a href="">개인정보처리방침</a></li>
-            <li><a href="">이용약관</a></li>
-            <li><a href="">이메일주소 무단수집거부</a></li>
-            <li><a href="">자주 묻는 질문</a></li>
-          </ul>
-        </div>
-        <strong class="logo3"><a href=""><img src="../assets/images/img_logo3.png" alt="보건복지부"></a></strong>
-        <div class="info-text">
-          <address>
-            30113) 세종특별자치시 도움4로 13 보건복지부 (정부세종청사 10동)<br>
-            안내전화 : 보건복지상담센터 129 / 당직실(공휴일, 야간) : 044-202-2118 / FAX : 044-202-3910
-          </address>
-          <p class="copyright">COPYRIGHT ⓒ By MOHW. All rights Reserved</p>
-        </div>
-      </div>
+        <div class="site-carousel">
+          <div class="item"><a href="">공익신고</a></div>
+          <div class="item"><a href="">e-나라지표</a></div>
+          <div class="item"><a href="">자살예방상담전화 1393</a></div>
+          <div class="item"><a href="">안전신문고</a></div>
+          <div class="item"><a href="">국민건강보험</a></div>
+          <div class="item"><a href="">성범죄자 알림e</a></div>
+          <div class="item"><a href="">한국양성평등교육진흥원</a></div>
+          <div class="item"><a href="">공익신고</a></div>
+          <div class="item"><a href="">e-나라지표</a></div>
+          <div class="item"><a href="">자살예방상담전화 1393</a></div>
+          <div class="item"><a href="">안전신문고</a></div>
+          <div class="item"><a href="">국민건강보험</a></div>
+          <div class="item"><a href="">성범죄자 알림e</a></div>
+          <div class="item"><a href="">한국양성평등교육진흥원</a></div </div> </div> </section> <section class="infos">
+          <div class="inner">
+            <strong class="logo2"><a href="">EMR LOGO</a></strong>
+            <div class="util-menu">
+              <ul>
+                <li><a href="">개인정보처리방침</a></li>
+                <li><a href="">이용약관</a></li>
+                <li><a href="">이메일주소 무단수집거부</a></li>
+                <li><a href="">자주 묻는 질문</a></li>
+              </ul>
+            </div>
+            <strong class="logo3"><a href=""><img src="../assets/images/img_logo3.png" alt="보건복지부"></a></strong>
+            <div class="info-text">
+              <address>
+                30113) 세종특별자치시 도움4로 13 보건복지부 (정부세종청사 10동)<br>
+                안내전화 : 보건복지상담센터 129 / 당직실(공휴일, 야간) : 044-202-2118 / FAX : 044-202-3910
+              </address>
+              <p class="copyright">COPYRIGHT ⓒ By MOHW. All rights Reserved</p>
+            </div>
+          </div>
     </section>
   </footer>
 
@@ -289,6 +283,9 @@
       </div>
     </div>
   </div>
+
+
+
 
 </body>
 
