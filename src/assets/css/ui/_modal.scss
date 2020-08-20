@@ -145,6 +145,26 @@
         margin-right:5px;
         line-height:30px;
       }
+      .auth-button{
+        width:100px;
+        height:30px;
+        line-height:30px;
+        text-align:center;
+        background:#e6e6e6;
+      }
+      .msg{
+        vertical-align: top;
+        font-size:13px;
+        margin-left:5px;
+        line-height:30px;
+        &.success{
+          color:#108ad3;
+        }
+        &.faild{
+          color:#f02011;
+        }
+      }
     }
   }
+
 }

@@ -601,6 +601,14 @@ select::-ms-expand { display: none; }
 
 .modal-col-contents tbody td .mail-icon { vertical-align: top; font-size: 13px; margin-right: 5px; line-height: 30px; }
 
+.modal-col-contents tbody td .auth-button { width: 100px; height: 30px; line-height: 30px; text-align: center; background: #e6e6e6; }
+
+.modal-col-contents tbody td .msg { vertical-align: top; font-size: 13px; margin-left: 5px; line-height: 30px; }
+
+.modal-col-contents tbody td .msg.success { color: #108ad3; }
+
+.modal-col-contents tbody td .msg.faild { color: #f02011; }
+
 .popups { min-width: 460px; position: fixed; z-index: 500; }
 
 .popup-body a { font-size: 0; display: block; vertical-align: top; }
