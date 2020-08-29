@@ -85,7 +85,7 @@
 .modal-row{
   position:relative;
   font-size:0;
-  margin-bottom:20px;
+  margin-bottom:10px;
   &:last-child{
     margin-bottom:0;
   }
@@ -97,12 +97,12 @@
     width:50%;
     &:first-child{
       .modal-col-inner{
-        margin-right:10px;
+        margin-right:5px;
       }
     }
     &:last-child{
       .modal-col-inner{
-        margin-left:10px;
+        margin-left:5px;
       }
     }
   }
@@ -115,10 +115,15 @@
 .modal-col-inner{
   border:1px solid #ddd;
   box-sizing: border-box;
-  min-height:257px;
-  padding:20px;
+  min-height:218px;
+  padding:10px;
 }
 .modal-col-contents{
+  .custom-checkbox{
+    &.block{
+      margin-top:5px;
+    }
+  }
   table{
     width:100%;
   }
